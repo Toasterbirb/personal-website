@@ -1,6 +1,6 @@
 #!/bin/sh
 contentPath=./content
-sitePath=./site
+sitePath=./docs
 stylesheet=$contentPath/style.css
 
 function _insertHead()
