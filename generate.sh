@@ -12,10 +12,26 @@ function _insertHead()
 
 function _insertHtml()
 {
+	# Requires head
+
 	file=$1
 	echo "Inserting <html> $file"
 	sed -i '1s|^|<html>\n|' $file
 	echo "</html>" >> $file
+}
+
+function _inserMeta()
+{
+	# Requires head
+	
+	file=$1
+	echo "Inserting metadata $file"
+	sed -i '/^<head>/a \
+<meta property="og:type" content="website"> \
+<meta property="og:site_name" content="toasterbirb.com"> \
+<meta property="og:title" content="toasterbirb.com"> \
+<meta property="og:description" content="Toasterbirbs internet corner"> \
+<meta property="og:image" content="https://duckduckgo.com/i/3be2cf68.png">' $file
 }
 
 # Move stylesheet to the build directory
@@ -32,6 +48,7 @@ do
 			md2html $i > $htmlpath
 			_insertHead "$htmlpath"
 			_insertHtml "$htmlpath"
+			_inserMeta "$htmlpath"
 
 			# Replace markdown links to html links
 			sed -i s/\.md/.html/g $htmlpath
