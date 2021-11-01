@@ -1,0 +1,19 @@
+body {
+	background-color: #2e3440;
+	color: white;
+	font-family: mononoki;
+	max-width: 50em;
+	margin: 2em;
+}
+
+a {
+	color: #88c0d0;
+}
+
+/*h1,h2,h3,h4,h5,h6 {
+	font-family: mononoki;
+}
+
+p {
+	font-family: mononoki;
+}*/
