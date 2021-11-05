@@ -1,16 +1,13 @@
-# Title
+;title=Home nest
+;navlink=Home
+
+# Home Nest
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut arcu mollis, porta arcu et, pretium massa. Morbi purus sapien, dictum non vulputate sit amet, convallis in tellus. Nullam tempor odio at ex aliquam, vel tempor sem sodales. Aliquam sem massa, eleifend vel lacus at, volutpat molestie tellus. Duis et tellus placerat erat volutpat placerat eget id felis. Ut gravida non magna vitae volutpat. Donec eu semper felis.</p>
+Welcome to my internet property! I usually go by the name of 'ToasterBirb', love birbs (birds) and identify as a computer addict.
 
-Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam et lorem ultricies, venenatis nisl aliquet, hendrerit mauris. Phasellus aliquam faucibus ullamcorper. Integer rutrum nibh nec fermentum tincidunt. Etiam at dapibus odio, ac tempus felis. Nulla placerat lorem neque, at hendrerit purus dapibus non. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam tincidunt arcu vel elit convallis, sed ullamcorper ipsum vestibulum. Phasellus imperdiet lacinia massa, quis dapibus lacus ornare quis. Vivamus posuere lacinia justo, non scelerisque arcu hendrerit at. Ut blandit nisl vel urna viverra, nec fermentum nisl convallis.</p>
-
-## Link to page 2 here
-Here is the link: [Link to the page](./page2.md)
-
-## Subtitle
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut arcu mollis, porta arcu et, pretium massa. Morbi purus sapien, dictum non vulputate sit amet, convallis in tellus. Nullam tempor odio at ex aliquam, vel tempor sem sodales. Aliquam sem massa, eleifend vel lacus at, volutpat molestie tellus. Duis et tellus placerat erat volutpat placerat eget id felis. Ut gravida non magna vitae volutpat. Donec eu semper felis.</p>
-- Option 1
-- Option 2
-	- Suboption 1
-	- Suboption 2
-- Option 3
+## Links to internet stuff I have made
+- [**Birb2D**](https://github.com/Toasterbirb/Birb2D). A small game engine project of mine written in C++. So far I have made a [Flappy Bird](https://github.com/Toasterbirb/Flappy-Birb) clone with it.
+- [**dde**](https://github.com/Toasterbirb/dde/tree/dev). "Dynamic desktop environment", a mixture of [suckless](https://suckless.org/) programs, like [dwm](https://dwm.suckless.org/) and [dmenu](https://tools.suckless.org/dmenu/) that I have been trying to combine into one desktop environment that would be simpler to install on a new system.
+- [**dsteam**](https://github.com/Toasterbirb/dsteam). Dmenu fork for launching steam games from a simple [dmenu](https://tools.suckless.org/dmenu/)-like menu.
+- [**kami-red**](https://github.com/Toasterbirb/kami-red). A fork of mine from the well known Minecraft anarchy utility client [kami-blue](https://kamiblue.org/).
+- [**This website**](https://github.com/Toasterbirb/personal-website). Yes, it is open source. Dig in and see how I'm generating these pages from markdown files with a simple shell script.

@@ -7,7 +7,7 @@ body {
 	background-color: #2e3440;
 	color: white;
 	font-family: mononoki;
-	max-width: 50em;
+	max-width: 55em;
 	margin: 2em;
 	margin-left: auto;
 	margin-right: auto;
@@ -19,10 +19,14 @@ a {
 	color: #88c0d0;
 }
 
-/*h1,h2,h3,h4,h5,h6 {
-	font-family: mononoki;
+nav > * {
+	text-align: center;
+	font-variant: initial;
+	margin: auto;
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	margin: 2em;
 }
 
-p {
-	font-family: mononoki;
-}*/
+input:checked + div { display: none; }
