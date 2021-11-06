@@ -1,0 +1,66 @@
+<html>
+<head>
+<link rel="shortcut icon" type="image/jpg" href="./pics/jumala.png"> <meta property="og:type" content="website"> <meta property="og:site_name" content="toasterbirb.com"> <meta property="og:title" content="toasterbirb.com"> <meta property="og:description" content="Toasterbirb's internet corner"> <meta property="og:image" content="./pics/jumala.png">
+<link rel = 'stylesheet' type='text/css' href='style.css'>
+<title>
+Dotfiles
+</title>
+</head>
+<body>
+<nav> 		<ul> 			<li><a href='index.html'>Home</a></li><li><a href='dotfiles.html'>Dotfiles</a></li><li><a href='contact.html'>Contact me</a></li> 		</ul>	</nav>
+<h1>Dotfiles</h1>
+<hr>
+As a GNU/Linux user, I am obligated to share my dotfiles (hidden files with . in the beginning of the name, usually configuration files in ~/.config). I'll also put in other stuff that might matter.
+<br><br>
+<img src="./pics/desktop.png" alt="Desktop">
+<ul>
+<li><strong>OS</strong>: <a href="https://archlinux.org/">Arch Linux</a></li>
+<li><strong>Shell</strong>: bash</li>
+<li><strong>Icons</strong>: Adwaita</li>
+<li><strong>Font</strong>: <a href="https://madmalik.github.io/mononoki/">mononoki</a></li>
+<li>Wallpaper: <a href="./pics/wallpaper.jpg">link</a></li>
+<li><strong>Colorscheme</strong>: <a href="https://www.nordtheme.com/">nord</a></li>
+<li><strong>Window manager</strong>: <a href="https://github.com/Toasterbirb/dde/tree/dev">dwm</a></li>
+<li><strong>GTK Theme</strong>: <a href="https://www.opendesktop.org/s/Gnome/p/1013698/">Vimix dark</a></li>
+<li><strong>Shell prompt</strong>: <code>PS1='[\u@\h \W]\$ '</code></li>
+<li><strong>Terminal</strong>: <a href="https://github.com/alacritty/alacritty">Alacritty</a> <a href="./dotfiles/alacritty.yml">alacritty.yml</a></li>
+<li>Filemanager: <a href="https://github.com/gokcehan/lf">lf</a> <a href="./dotfiles/lfrc">lfrc</a> <a href="./dotfiles/lp.sh">lp.sh</a> <a href="./dotfiles/lfcd.sh">lfcd.sh</a></li>
+</ul>
+<hr>
+<h2>Notable lines in .bashrc</h2>
+<h3>Table of contents</h3>
+<ul>
+<li><a href="#translate">Translate Swedish text (or other languages) in pictures</a></li>
+<li><a href="#password-prompt">Cute root password prompt</a></li>
+</ul>
+<hr>
+<a name="translate"></a>
+<h3>Translate Swedish text (or other languages) in pictures</h3>
+<h4>Dependencies</h4>
+<ul>
+<li>tesseract</li>
+<li>scrot</li>
+<li><a href="https://www.soimort.org/translate-shell/">translate-shell</a></li>
+</ul>
+<h4>Code</h4>
+<pre><code class="language-block">alias swe='scrot -s /tmp/translate.png &amp;&amp; \
+trans -b swe:fi &quot;$(tesseract -l swe /tmp/translate.png stdout 2&gt;/dev/null)&quot; &amp;&amp; rm /tmp/translate.png'
+</code></pre>
+<h4>Usage</h4>
+Run the <code>swe</code> alias (or make this a script that is in PATH), select the area you want to translate and the translation should show up in the terminal. If you are going to make this into a script, you will need another way to show the translation (dunst etc.)
+<hr>
+<hr>
+<a name="password-prompt"></a>
+<h3>Cute root password prompt</h3>
+<h4>Dependencies</h4>
+<ul>
+<li>sudo (there might be some similar variable for doas)</li>
+</ul>
+<h4>Code</h4>
+<pre><code class="language-block">export SUDO_PROMPT=&quot;(* ^ ω ^) Mayw I hav ur passwrd sir: &quot;
+</code></pre>
+<h4>Preview</h4>
+<img src="./pics/password_prompt.png" alt="Password prompt preview">
+<hr>
+</body>
+</html>
