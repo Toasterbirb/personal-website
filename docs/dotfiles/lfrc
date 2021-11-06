@@ -1,0 +1,250 @@
+# interpreter for shell commands (needs to be POSIX compatible)
+set shell sh
+
+# set '-eu' options for shell commands
+# These options are used to have safer shell commands. Option '-e' is used to
+# exit on error and option '-u' is used to give error for unset variables.
+# Option '-f' disables pathname expansion which can be useful when $f, $fs, and
+# $fx variables contain names with '*' or '?' characters. However, this option
+# is used selectively within individual commands as it can be limiting at
+# times.
+set shellopts '-eu'
+
+# set internal field separator (IFS) to "\n" for shell commands
+# This is useful to automatically split file names in $fs and $fx properly
+# since default file separator used in these variables (i.e. 'filesep' option)
+# is newline. You need to consider the values of these options and create your
+# commands accordingly.
+set ifs "\n"
+
+# leave some space at the top and the bottom of the screen
+set scrolloff 10
+
+# use enter for shell commands
+map <enter> shell
+
+# map esc to show how to quit
+map <esc> %{{echo -n "Press q to quit"}}
+
+# execute current file (must be executable)
+map x $$f
+map X !$f
+
+# bind for simple filtering
+map <c-f> :filter
+
+# dedicated keys for file opener actions
+map o &mimeopen $f
+map O $mimeopen --ask $f
+
+# Settings
+set drawbox
+set incsearch
+set previewer ~/.config/lf/lp.sh
+
+# Quick shortcuts
+map gc cd "~/.config"
+map gm cd "~/vids/meemut"
+
+# Command to run when moving between directories
+cmd on-cd &{{
+	# display git repository status in your prompt
+	source /usr/share/git/completion/git-prompt.sh
+	GIT_PS1_SHOWDIRTYSTATE=auto
+	GIT_PS1_SHOWSTASHSTATE=auto
+	GIT_PS1_SHOWUNTRACKEDFILES=auto
+	GIT_PS1_SHOWUPSTREAM=auto
+	git=$(__git_ps1 " (%s)") || true
+	fmt="\033[32;1m%u@%h\033[0m:\033[34;1m%d\033[0m\033[1m%f$git\033[0m"
+	lf -remote "send $id set promptfmt \"$fmt\""
+}}
+
+# define a custom 'open' command
+# This command is called when current file is not a directory. You may want to
+# use either file extensions and/or mime types here. Below uses an editor for
+# text files and a file opener for the rest.
+cmd open ${{
+	
+    case $(file --mime-type $f -b) in
+		text/html)
+			which surf &>/dev/null && surf $f || firefox $f
+		;;
+
+        text/*) $EDITOR $fx;;
+		image/gif) mpv $f ;;
+		application/octet-stream)
+			case $f in
+				*.blend) blender $f &>/dev/null & disown ;;
+				*.blend1) notify-send -t 3000 -u critical "LF" "[$(basename $f)] is a backup file, not a project file" ;;
+				*.kra) krita $f &>/dev/null & disown ;;
+				*.kra~) krita $f &>/dev/null & disown ;;
+				*.vdi) notify-send -t 3000 -u critical "LF" "[$(basename $f)] is a virtual hard disk, you can't browse it in this way" ;;
+				*) mpv $f ;;
+			esac
+		;;
+
+		image/*)
+			case $f in
+				*.xcf) gimp $f &>/dev/null & disown ;;
+				*) sxiv $f & disown ;;
+			esac
+		;;
+
+		video/*) mpv $f ;;
+		audio/*) mpv $f ;;
+
+		inode/symlink)
+			case $f in
+				*.pdf) zathura $f &>/dev/null & disown ;;
+			esac
+		;;
+
+		application/json) jq -C < $f | less -R ;;
+		application/pdf) zathura $f &>/dev/null & disown ;;
+		application/gzip) notify-send -t 3000 -u critical "LF" "This archive cannot be opened. Consider extracting it first" ;;
+		application/x-sqlite3) which sqlitebrowser &>/dev/null && sqlitebrowser $f &>/dev/null || notify-send -t 3000 -u critical "LF" "sqlitebrowser not installed!" & disown ;;
+
+        *) for f in $fx; do setsid $OPENER $f > /dev/null 2> /dev/null & done;;
+    esac
+}}
+
+# define a custom 'rename' command without prompt for overwrite
+# cmd rename %[ -e $1 ] && printf "file exists" || mv $f $1
+# map r push :rename<space>
+
+# make sure trash folder exists
+# %mkdir -p ~/.trash
+
+# move current file or selected files to trash folder
+# (also see 'man mv' for backup/overwrite options)
+cmd trash %set -f; mv $fx ~/.trash
+
+# define a custom 'delete' command
+# cmd delete ${{
+#     set -f
+#     printf "$fx\n"
+#     printf "delete?[y/n]"
+#     read ans
+#     [ $ans = "y" ] && rm -rf $fx
+# }}
+
+# use '<delete>' key for either 'trash' or 'delete' command
+# map <delete> trash
+map <delete> delete
+
+# extract the current file with the right command
+# (xkcd link: https://xkcd.com/1168/)
+cmd extract ${{
+    set -f
+    case $f in
+        *.tar.bz|*.tar.bz2|*.tbz|*.tbz2) tar xjvf $f;;
+        *.tar.gz|*.tgz) tar xzvf $f;;
+        *.tar.xz|*.txz) tar xJvf $f;;
+        *.zip) unzip $f;;
+        *.rar) unrar x $f;;
+        *.7z) 7z x $f;;
+    esac
+}}
+
+# compress current file or selected files with tar and gunzip
+cmd tar ${{
+    set -f
+    mkdir $1
+    cp -r $fx $1
+    tar czf $1.tar.gz $1
+    rm -rf $1
+}}
+
+# compress current file or selected files with zip
+cmd zip ${{
+    set -f
+    mkdir $1
+    cp -r $fx $1
+    zip -r $1.zip $1
+    rm -rf $1
+}}
+
+# fzf
+cmd fzf_jump ${{
+   res="$(find . -maxdepth 1 | fzf --preview='ls --color=always {}' --preview-window=:sharp --reverse --header='Jump to location')"
+   if [ -f "$res" ]; then
+     cmd="select"
+   elif [ -d "$res" ]; then
+     cmd="cd"                                                       
+   fi
+lf -remote "send $id $cmd \"$res\""
+}}
+map f :fzf_jump
+
+# Create new directory
+cmd mkdir %{{
+	mkdir $1
+}}
+
+# Create new file
+cmd touch %{{
+	printf "Created file ($1)"
+	touch $1
+}}
+
+# Image thumbnails preview
+cmd image_preview %{{
+	find . -maxdepth 1 -not -type d | xargs sxiv -bt
+}}
+map <c-x> :image_preview
+
+# Set wallpaper
+cmd bg %{{
+	nitrogen --set-zoom-fill "$f" &>/dev/null
+}}
+
+# Create new script
+cmd script %{{
+	[ $# == 0 ] && echo "No name given for the script" && exit 0
+
+	touch "$1"
+	chmod +x "$1"
+	echo -e "#!/bin/bash\n" >> "$1"
+}}
+
+# Get total disk usage of the current directory
+cmd du %{{
+	echo "Total size: $(du -sh | sed 's/\.//g')"
+}}
+
+# Get file linecount
+cmd wc %{{
+	echo -e "[Lines: $(wc -l $f | awk '{print $1}')] [Words: $(wc -w $f | awk '{print $1}')] [Chars: $(wc -m $f | awk '{print $1}')]"
+}}
+
+# Move file and create symlink
+cmd lnmv %{{
+	[ $# == 0 ] && echo "No target given" && exit 0
+	target=$(echo $1 | sed "s|~|$HOME|g")
+	mv "$f" "$target"
+	ln -s "$target" "$f"
+}}
+
+# Drag and drop
+map <c-d> :dag
+cmd dag ${{
+	dragon --and-exit "$f"
+}}
+
+# Create cmus playlist
+cmd cmuslist %{{
+	[ $# == 0 ] && echo "No playlist name given" && exit 0
+	ls -d $PWD/* > "$HOME/.config/cmus/playlists/$1"
+	echo "Playlist $1 created!"
+}}
+
+cmd fix-whitespace %{{
+	fixedFileName=$(sed 's/ /_/g' <<< $f)
+	[ "$fixedFileName" == "$f" ] && echo "This file has no whitespaces in the name" && exit 0
+	mv $f $fixedFileName
+}}
+
+# VIM bindings/commands that are enforced by habits
+cmd q %{{
+	lf -remote "send $id quit"
+}}

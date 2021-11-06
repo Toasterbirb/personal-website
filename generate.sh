@@ -79,6 +79,17 @@ function _removeSourceMeta()
 	sed -i '/^<p>;/d; /^;/d' $file
 }
 
+function _copyDotfiles()
+{
+	# Copy over some selected dotfiles to docs directory
+	echo "Copying dotfiles"
+	mkdir -p $sitePath/dotfiles
+	cp -v ~/.config/alacritty/alacritty.yml $sitePath/dotfiles/
+	cp -v ~/.config/lf/lfrc $sitePath/dotfiles/
+	cp -v ~/.config/lf/lp.sh $sitePath/dotfiles/
+	cp -v ~/.config/lf/lfcd.sh $sitePath/dotfiles/
+}
+
 # Move stylesheet to the build directory and clean old html files
 rsync -a $stylesheet $sitePath/style.css
 rsync -a --delete-after $contentPath/pics $sitePath/
@@ -103,9 +114,17 @@ do
 			_insertNavigation "$htmlpath"
 			_removeSourceMeta "$htmlpath"
 
+
 			# Replace markdown links to html links
 			sed -i s/\.md/.html/g $htmlpath
 			printf "\n"
 			;;
 	esac
 done
+
+case $1 in
+	-d)
+		# Update dotfiles
+		_copyDotfiles
+		;;
+esac
