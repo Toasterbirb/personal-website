@@ -49,6 +49,16 @@ img {
 	max-width: 100%;
 }
 
+details {
+	background-color: #343C4A;
+	padding: 0.5em;
+	margin: 0.5em;
+}
+
+/*details > summary {
+	background-color: #2e3440;
+}*/
+
 code {
 	background-color: #4c566a;
 	display: inline-block;

@@ -29,14 +29,8 @@ Filemanager: <a href="https://github.com/gokcehan/lf">lf</a> <a href="./dotfiles
 <br>
 <hr>
 <h2>Notable lines in .bashrc</h2>
-<h3>Table of contents</h3>
-<ul>
-<li><a href="#translate">Translate Swedish text (or other languages) in pictures</a></li>
-<li><a href="#password-prompt">Cute root password prompt</a></li>
-</ul>
-<hr>
-<a name="translate"></a>
-<h3>Translate Swedish text (or other languages) in pictures</h3>
+<details>
+    <summary>Translate Swedish text (or other languages) in pictures</summary>
 <h4>Dependencies</h4>
 <ul>
 <li>tesseract</li>
@@ -51,9 +45,9 @@ trans -b swe:fi &quot;$(tesseract -l swe /tmp/translate.png stdout 2&gt;/dev/nul
 <h4>Usage</h4>
 Run the <code>swe</code> alias (or make this a script that is in PATH), select the area you want to translate and the translation should show up in the terminal. If you are going to make this into a script, you will need another way to show the translation (dunst etc.)
 <br><br>
-<hr>
-<a name="password-prompt"></a>
-<h3>Cute root password prompt</h3>
+</details>
+<details>
+    <summary>Cute root password prompt</summary>
 <h4>Dependencies</h4>
 <ul>
 <li>sudo (there might be some similar variable for doas)</li>
@@ -63,6 +57,6 @@ Run the <code>swe</code> alias (or make this a script that is in PATH), select t
 </code></pre>
 <h4>Preview</h4>
 <img src="./pics/password_prompt.png" alt="Password prompt preview">
-<hr>
+</details>
 </body>
 </html>

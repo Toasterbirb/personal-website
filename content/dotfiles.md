@@ -25,14 +25,9 @@ Filemanager: [lf](https://github.com/gokcehan/lf) [lfrc](./dotfiles/lfrc) [lp.sh
 ---
 
 ## Notable lines in .bashrc
-### Table of contents
-- [Translate Swedish text (or other languages) in pictures](#translate)
-- [Cute root password prompt](#password-prompt)
-
-
----
-<a name="translate"></a>
-### Translate Swedish text (or other languages) in pictures
+<details>
+	<summary>Translate Swedish text (or other languages) in pictures</summary>
+	
 #### Dependencies
 - tesseract
 - scrot
@@ -47,12 +42,12 @@ trans -b swe:fi "$(tesseract -l swe /tmp/translate.png stdout 2>/dev/null)" && \
 
 #### Usage
 Run the `swe` alias (or make this a script that is in PATH), select the area you want to translate and the translation should show up in the terminal. If you are going to make this into a script, you will need another way to show the translation (dunst etc.)
-
 <br><br>
+</details>
 
----
-<a name="password-prompt"></a>
-### Cute root password prompt
+<details>
+	<summary>Cute root password prompt</summary>
+
 #### Dependencies
 - sudo (there might be some similar variable for doas)
 
@@ -63,5 +58,4 @@ export SUDO_PROMPT="(* ^ ω ^) Mayw I hav ur passwrd sir: "
 
 #### Preview
 ![Password prompt preview](./pics/password_prompt.png)
-
----
+</details>
