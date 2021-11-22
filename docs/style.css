@@ -3,6 +3,21 @@
 	src: url("./fonts/mononoki-Regular.ttf")
 }
 
+h2 {
+	margin-top: 1.5em;
+}
+
+hr {
+	border-radius: 1em;
+	border: 0.15em solid;
+}
+
+li {
+	margin-top: 0.2em;
+	margin-bottom: 0.2em;
+	margin-left: -1em;
+}
+
 body {
 	background-color: #2e3440;
 	color: white;
@@ -34,13 +49,23 @@ img {
 	max-width: 100%;
 }
 
+details {
+	background-color: #343C4A;
+	padding: 0.5em;
+	margin: 0.5em;
+}
+
+/*details > summary {
+	background-color: #2e3440;
+}*/
+
 code {
 	background-color: #4c566a;
 	display: inline-block;
-	font-size: 1.1em;
-	padding-left: 0.2em;
-	padding-right: 0.2em;
-	padding-top: 0.2em;
+	font-size: 0.9em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	padding-top: 0.5em;
 }
 
 .language-block {

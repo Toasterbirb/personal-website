@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 contentPath=./content
 sitePath=./docs
 stylesheet=$contentPath/style.css
@@ -90,6 +90,12 @@ function _copyDotfiles()
 	cp -v ~/.config/lf/lfcd.sh $sitePath/dotfiles/
 }
 
+function _addBreakLinesToSubHeaders()
+{
+	file=$1
+	sed -i "s/<h2>/<br><h2>/g" $file
+}
+
 # Move stylesheet to the build directory and clean old html files
 rsync -a $stylesheet $sitePath/style.css
 rsync -a --delete-after $contentPath/pics $sitePath/
@@ -113,6 +119,7 @@ do
 			_inserMeta "$htmlpath"
 			_insertNavigation "$htmlpath"
 			_removeSourceMeta "$htmlpath"
+			#_addBreakLinesToSubHeaders "$htmlpath"
 
 
 			# Replace markdown links to html links

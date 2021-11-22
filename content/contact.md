@@ -2,6 +2,7 @@
 ;navlink=Contact me
 
 # How to contact me
+---
 I don't have too many accounts on social media platforms, but you can get in touch with me in a few ways.
 
 ## Matrix
