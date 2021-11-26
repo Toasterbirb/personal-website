@@ -74,4 +74,13 @@ code {
 	padding: 0.5em;
 }
 
+.gallery {
+	width: 46%;
+	padding: 0.5em;
+}
+
+.gallery:hover {
+	transform: scale(1.1);
+}
+
 input:checked + div { display: none; }
