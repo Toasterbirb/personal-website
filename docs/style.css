@@ -28,6 +28,7 @@ body {
 	margin-right: auto;
 	padding-left: 1em;
 	padding-right: 1em;
+	line-height: 1.4em;
 }
 
 
@@ -38,6 +39,7 @@ a {
 nav > * {
 	text-align: center;
 	font-variant: initial;
+	font-size: 1.2em;
 	margin: auto;
 	list-style: none;
 	display: flex;

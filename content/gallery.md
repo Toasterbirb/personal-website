@@ -2,8 +2,9 @@
 ;navlink=Gallery
 
 # Gallery
+---
 This page is mostly for portfolio / memorial purposes, mostly 3D-art I have done in the past / recent times.
-<br><br>
+<break>
 
 <a href="./pics/art/high-res/Classroom-render.jpg"><img class="gallery" src="./pics/art/thumbnails/Classroom-render.jpg" /></a>
 <a href="./pics/art/high-res/Classroom-volume-render.jpg"><img class="gallery" src="./pics/art/thumbnails/Classroom-volume-render.jpg" /></a>

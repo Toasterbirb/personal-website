@@ -4,7 +4,7 @@
 # Dotfiles
 ---
 As a GNU/Linux user, I am obligated to share my dotfiles (hidden files with . in the beginning of the name, usually configuration files in ~/.config). I'll also put in other stuff that might matter.
-<br><br>
+<break>
 
 ![Desktop](./pics/desktop.png)
 <br><br>
@@ -42,7 +42,7 @@ trans -b swe:fi "$(tesseract -l swe /tmp/translate.png stdout 2>/dev/null)" && \
 
 #### Usage
 Run the `swe` alias (or make this a script that is in PATH), select the area you want to translate and the translation should show up in the terminal. If you are going to make this into a script, you will need another way to show the translation (dunst etc.)
-<br><br>
+<break>
 </details>
 
 <details>
