@@ -1,17 +1,18 @@
 #!/bin/bash
+url="https://toasterbirb.com"
 contentPath=./content
 sitePath=./docs
 stylesheet=$contentPath/style.css
 
 function _setupSourceMeta()
 {
-	for i in $contentPath/*
+	for i in $(find $contentPath -print)
 	do
 		case $i in
 			*.md)
 				file="$i"
 
-				grep -q ';navlink' $file && navtitle=$(awk '/^;navlink/' $file | cut -d'=' -f2) && navlinks="<li><a href='$(basename "$file")'>$navtitle</a></li>${navlinks}"
+				grep -q ';navlink' $file && navtitle=$(awk '/^;navlink/' $file | cut -d'=' -f2) && navlinks="<li><a href='$url/$(basename "$file")'>$navtitle</a></li>${navlinks}"
 		;;
 		esac
 	done
@@ -26,12 +27,16 @@ function _cleanSourceMeta()
 function _insertHeadAndBody()
 {
 	file=$1
+	fileName=$(basename $file)
+	relativeCSSPath=$(sed "s|./docs/guides/$fileName|../style.css|; s|./docs/$fileName|./style.css|" <<< $file)
+
 	echo "Inserting <head> and <body> $file"
+	echo "Relative CSS path: $relativeCSSPath"
 
 	title="$(awk '/^;title/' $file | cut -d'=' -f2)"
 	echo "Title: $title"
 
-	sed -i "1s|^|<head>\n<link rel = 'stylesheet' type='text/css' href='style.css'>\n<title>\n$title\n</title>\n</head>\n<body>\n|" $file
+	sed -i "1s|^|<head>\n<link rel = 'stylesheet' type='text/css' href='$relativeCSSPath'>\n<title>\n$title\n</title>\n</head>\n<body>\n|" $file
 	echo "</body>" >> $file
 }
 
@@ -99,19 +104,30 @@ function _replaceCustomTags()
 
 }
 
+function _insertContactMeBlockToGuides()
+{
+	file=$1
+	sed -i "s|</body>|<br><br><hr><h3>In case you have any questions, my inbox is open! <a href='$url/contact.html'>Send me a message</a><h3></body>|" $file
+}
+
 # Move stylesheet to the build directory and clean old html files
 rsync -a $stylesheet $sitePath/style.css
 rsync -a --delete-after $contentPath/pics $sitePath/
-rm $sitePath/*.html
+find $sitePath -iname "*.html" -print | xargs rm -v
+[ -d $sitePath/guides ] || mkdir -p $sitePath/guides
 
 _setupSourceMeta
 
-for i in $contentPath/*
+for i in $(find $contentPath -print)
 do
 	case $i in
 		*.md)
 			filename=$(basename $i | sed 's/md/html/g')
-			htmlpath=$sitePath/$filename
+			case $i in
+				*/guides/*) htmlpath=$sitePath/guides/$filename ;;
+				*) htmlpath=$sitePath/$filename ;;
+			esac
+			echo $htmlpath
 
 			# Generate html
 			md2html $i > $htmlpath
@@ -124,6 +140,9 @@ do
 			_replaceCustomTags "$htmlpath"
 			_removeSourceMeta "$htmlpath"
 
+			case $i in
+				*/guides/*) _insertContactMeBlockToGuides "$htmlpath" ;;
+			esac
 
 			# Replace markdown links to html links
 			sed -i s/\.md/.html/g $htmlpath
