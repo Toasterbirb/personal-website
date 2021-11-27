@@ -3,8 +3,17 @@
 	src: url("./fonts/mononoki-Regular.ttf")
 }
 
+h1 {
+	color: #ffffff;
+}
+
 h2 {
 	margin-top: 1.5em;
+	color: #e5e9f0;
+}
+
+h3 {
+	color: #d8dee9;
 }
 
 hr {
