@@ -90,10 +90,13 @@ function _copyDotfiles()
 	cp -v ~/.config/lf/lfcd.sh $sitePath/dotfiles/
 }
 
-function _addBreakLinesToSubHeaders()
+function _replaceCustomTags()
 {
 	file=$1
-	sed -i "s/<h2>/<br><h2>/g" $file
+	sed -i "s/<break>/<br><br>/g" $file
+
+	awk -F "=" '/^;header/ { print $2 }' $file | xargs -i sed -i "s/;header={}/<a name=\"{}\"><\/a>/" $file
+
 }
 
 # Move stylesheet to the build directory and clean old html files
@@ -118,8 +121,8 @@ do
 			_insertHtml "$htmlpath"
 			_inserMeta "$htmlpath"
 			_insertNavigation "$htmlpath"
+			_replaceCustomTags "$htmlpath"
 			_removeSourceMeta "$htmlpath"
-			#_addBreakLinesToSubHeaders "$htmlpath"
 
 
 			# Replace markdown links to html links
