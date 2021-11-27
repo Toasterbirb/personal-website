@@ -1,0 +1,85 @@
+<html>
+<head>
+<link rel="shortcut icon" type="image/jpg" href="./pics/jumala.png"> <meta property="og:type" content="website"> <meta property="og:site_name" content="Toasterbirb's website"> <meta property="og:title" content="Playing games from the Epic Games Store on Linux"> <meta property="og:description" content="Toasterbirb's internet corner"> <meta property="og:image" content="./pics/jumala.png">
+<link rel = 'stylesheet' type='text/css' href='../style.css'>
+<title>
+Playing games from the Epic Games Store on Linux
+</title>
+</head>
+<body>
+<nav> 		<ul> 			<li><a href='https://toasterbirb.com/gallery.html'>Gallery</a></li><li><a href='https://toasterbirb.com/guides.html'>Guides</a></li><li><a href='https://toasterbirb.com/contact.html'>Contact me</a></li><li><a href='https://toasterbirb.com/dotfiles.html'>Dotfiles</a></li><li><a href='https://toasterbirb.com/birb2d.html'>Birb2D</a></li><li><a href='https://toasterbirb.com/index.html'>Home</a></li> 		</ul>	</nav>
+<h1>Playing games from the Epic Games Store on Linux</h1>
+<hr>
+EGS (<a href="https://www.epicgames.com/store/en-US/">Epic Games Store</a>) has been spewing out free games for a really long time now. One thing they have yet to give awway though is a native Linux client. There are a few options out there to install and play games from EGS on Linux, but its not as simple as Steam etc. One way is to install the Epic Games Launcher with wine, but imo that is the worst way.<br><br>
+<h2>Table of contents</h2>
+<ul>
+<li><a href="#requirements">Requirements</a></li>
+<li><a href="#setup">Setup</a></li>
+<li><a href="#installing_games">Installing Games</a></li>
+<li><a href="#adding_the_game_to_lutris">Adding the game to Lutris</a></li>
+<li><a href="#configuring_the_wine_prefix">Configuring the wine prefix in Lutris</a></li>
+</ul>
+<a name="requirements"></a>
+<h2>Requirements</h2>
+Here's what you need to get your <em>Epic Games</em> (pun not intended) running on Linux:
+<ul>
+<li><a href="https://lutris.net/">Lutris</a>. A game launcher that we will be using to manage wine prefixes</li>
+<li><a href="https://github.com/derrod/legendary">Legendary</a>. FOSS alternative for Epic Games Launcher. We will be using it for downloading the games and installing them</li>
+<li><a href="https://github.com/ValveSoftware/Proton/">Proton</a> or <a href="https://github.com/GloriousEggroll/proton-ge-custom">Proton GE</a>. Wine runners that we will be using. Has greater game compatibility and performance than wine staging or lutris wine.</li>
+</ul>
+<a name="setup"></a>
+<h2>Setup</h2>
+<h3>Lutris</h3>
+Installation steps depend a lot on the distro, but on Arch Linux a simple <code>sudo pacman -S lutris</code> should do the job.
+<h3>Legendary</h3>
+Same as with lutris. On Arch Linux there's <a href="https://aur.archlinux.org/packages/legendary/">legendary</a> in the AUR. On other distros you might have to compile it from source following the steps in their <a href="https://github.com/derrod/legendary">github</a> repository or just download the latest <a href="https://github.com/derrod/legendary/releases">release</a>.
+<h3>Proton</h3>
+Download the latest release from either github repository. Then extract its contents into <em>~/.local/share/lutris/runners/wine</em>.
+<a name="installing_games"></a>
+<h2>Installing Games</h2>
+Installing games via legendary is fairly simple. First, you'll need to authenticate your Epic account with the command <code>legendary auth</code>. It will open a browser window, where you can login to your Epic account and then copy the <strong>sid</strong> string from the json string and paste it into the terminal window when legendary asks for it.
+After you have authenticated, you can list all of your games with <code>legendary list-games</code>. It will print a huge wall of text containing the games names and their <strong>app names</strong>. The <strong>app name</strong> is used when you tell legendary what game to install. If you can't be bothered to find the game you want to install from the text dump manually, you can use grep. Example:
+<pre><code class="language-block">[toasterbirb@tux ~]$ legendary list-games | grep -i &quot;hitman&quot;
+[cli] INFO: Logging in...
+[Core] INFO: Trying to re-use existing login session...
+[cli] INFO: Getting game list... (this may take a while)
+ * HITMAN (App name: Barbet | Version: 4226454)
+[toasterbirb@tux ~]$
+</code></pre>
+In this case the name that you install the game HITMAN with would be &quot;Barbet&quot;. To install the game, I would run <code>legendary install Barbet</code>. To change the location the games are going to be installed into, you can configure legendary using the file located at <em>~/.config/legendary/config.ini</em>. You can create it manually if it doesn't exist already. This is my configuration file as an example:
+<pre><code class="language-block">[Legendary]
+log_level = debug
+install_dir = /home/toasterbirb/Games
+disable_update_check = false
+disable_update_notice = true
+</code></pre>
+The <strong>install_dir</strong> isn't a huge deal though. You can move the game files around the filesystem after the installation is finished if you think you aren't going to need any updates for that game in the future.
+<a name="adding_the_game_to_lutris"></a>
+<h2>Adding the game to Lutris</h2>
+This is the important part. Legendary can launch games by itsef, but its configuration is quite difficult. Also games run with legendary usually don't have the best performance due to bad default settings.<br><br>
+Adding a new game to Lutris is a simple as clicking the &quot;+&quot; -button and filling in the text fields in the first tab that it opens up. The runner should be set to &quot;Wine (Runs Windows games)&quot;. Then click save.
+Now that the game is added to Lutris, we can begin the configuring.
+<a name="configuring_the_wine_prefix"></a>
+<h2>Configuring the wine prefix in Lutris</h2>
+This is the part where most of the magic happens and can sometimes be a bit complicated. The amount of steps you need to take to get a game running depends heavily on the game. Offline games are usually easier than online games for example. In the case of HITMAN for example, I had to copy some launch options from legendary to lutris so that the game would authentica properly with Epic servers. HITMAN is an extreme scenario though and this step usually isn't required.<br><br>
+To configure a game in Lutris, right click the game you want to configure and choose the option <em>Configure</em>. I will be configuring a game called &quot;Absolute Drift&quot;. To get most games running, these steps should be enough:
+<ol>
+<li>Game options tab<ul>
+<li>Set the <strong>executable path</strong> to the games executable. Its location depends on where you set legendary games to install to. In my case this is <em>absolutedrift.exe</em>. The default location is <em>~/legendary</em>.</li>
+<li>Set the <strong>Wine prefix</strong> path to the games location. In my case this would be <em>~/Games/AbsoluteDrift</em>. If you have launched the game with legendary at some point, you can point the wine prefix to the prefix that legendary had created.</li>
+</ul>
+</li>
+<li>Runner options tab<ul>
+<li>Set <strong>Wine version</strong> to the Proton version you downloaded earlier in <a href="#setup">setup</a> phase. I will be using Proton 6.3. If the Proton version doesn't show up in the list, make sure that you extracted the Proton release properly into the lutris wine runners directory. For example I have Proton 6.3 locate in a path like this: <em>~/.local/share/lutris/runners/wine/Proton 6.3</em>.</li>
+<li>Enable DXVK in case its disabled</li>
+<li>Enable VKD3D in case its disabled</li>
+<li>Disable Esync (in case of Proton, it doesn't support Esync, or at least didn't support for me)</li>
+</ul>
+</li>
+</ol>
+This should be enough for most games. DXVK and VKD3D can be toggled on and off in case the game doesn't work and you need to do some troubleshooting. Also trying out different Proton or Proton GE versions can be required. In my case, <em>Absolute Drif</em> had some rendering issue that was solved by disabling <strong>Xephyr Fullscreen</strong> in the <strong>System options</strong> tab. Troubleshooting is a skill you will learn over time by setting up multiple games. It will mostly be trial and error in the beginning, but after some time it will become easier.<br><br>
+Here is a picture of the game running and me drifting away like a pro
+<br><br>
+<img src="../pics/guides/egs_guide/absolute_drift.jpg" alt="Absolute drif">
+<br><br><hr><h3>In case you have any questions, my inbox is open! <a href='https://toasterbirb.com/contact.html'>Send me a message</a><h3></body>
+</html>
