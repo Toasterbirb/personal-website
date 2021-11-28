@@ -12,8 +12,10 @@ function _setupSourceMeta()
 			*.md)
 				file="$i"
 
-				grep -q ';navlink' $file && navtitle=$(awk '/^;navlink/' $file | cut -d'=' -f2) && navlinks="<li><a href='$url/$(basename "$file")'>$navtitle</a></li>${navlinks}"
-		;;
+				case $file in
+					index.md) grep -q ';navlink' $file && navtitle=$(awk '/^;navlink/' $file | cut -d'=' -f2) && navlinks="<li><a href='$url/$(basename "$file")'>$navtitle</a></li>${navlinks}" ;;
+					*) grep -q ';navlink' $file && navtitle=$(awk '/^;navlink/' $file | cut -d'=' -f2) && navlinks="${navlinks}<li><a href='$url/$(basename "$file")'>$navtitle</a></li>" ;;
+				esac
 		esac
 	done
 }

@@ -80,4 +80,4 @@ This should be enough for most games. DXVK and VKD3D can be toggled on and off i
 
 Here is a picture of the game running and me drifting away like a pro
 <break>
-![Absolute drif](../pics/guides/egs_guide/absolute_drift.jpg)
+![Absolute drift](../pics/guides/egs_guide/absolute_drift.jpg)
