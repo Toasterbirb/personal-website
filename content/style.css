@@ -94,4 +94,11 @@ code {
 	transform: scale(1.1);
 }
 
+.raisedLetters {
+	background-color: #282E38;
+	border-radius: 0.8em;
+	display: inline-flex;
+	padding: 5px;
+}
+
 input:checked + div { display: none; }
