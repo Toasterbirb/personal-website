@@ -1,5 +1,4 @@
 #!/bin/bash
-url="https://toasterbirb.com"
 contentPath=./content
 sitePath=./docs
 stylesheet=$contentPath/style.css
@@ -13,11 +12,21 @@ function _setupSourceMeta()
 				file="$i"
 
 				case $file in
-					index.md) grep -q ';navlink' $file && navtitle=$(awk '/^;navlink/' $file | cut -d'=' -f2) && navlinks="<li><a href='$url/$(basename "$file")'>$navtitle</a></li>${navlinks}" ;;
-					*) grep -q ';navlink' $file && navtitle=$(awk '/^;navlink/' $file | cut -d'=' -f2) && navlinks="${navlinks}<li><a href='$url/$(basename "$file")'>$navtitle</a></li>" ;;
+					*index.md)
+						echo "Home page $i"
+						grep -q ';navlink' $file && navtitle=$(awk '/^;navlink/' $file | cut -d'=' -f2) && navlinks="<li><a href='./$(basename "$file")'>$navtitle</a></li>${navlinks}"
+						;;
+
+					*)
+						echo "Normal file $i"
+						grep -q ';navlink' $file && navtitle=$(awk '/^;navlink/' $file | cut -d'=' -f2) && navlinks="${navlinks}<li><a href='./$(basename "$file")'>$navtitle</a></li>"
+						;;
 				esac
 		esac
 	done
+
+	subdirNavlinks=$(sed 's|\.\/|\.\.\/|g' <<< $navlinks)
+	echo "subdirNavlinks: $subdirNavlinks"
 }
 
 function _cleanSourceMeta()
@@ -45,12 +54,24 @@ function _insertHeadAndBody()
 function _insertNavigation()
 {
 	file=$1
-	echo "Inserting navigation links $file"
-	sed -i "/^<body>/a <nav> \
-		<ul> \
-			$navlinks \
-		</ul>\
-	</nav>" $file
+	case $file in
+		*/guides/*)
+			echo "Inserting navigation links $file"
+			sed -i "/^<body>/a <nav> \
+				<ul> \
+					$subdirNavlinks \
+				</ul>\
+			</nav>" $file
+			;;
+		*)
+			echo "Inserting navigation links $file"
+			sed -i "/^<body>/a <nav> \
+				<ul> \
+					$navlinks \
+				</ul>\
+			</nav>" $file
+			;;
+	esac
 }
 
 function _insertHtml()
@@ -109,7 +130,7 @@ function _replaceCustomTags()
 function _insertContactMeBlockToGuides()
 {
 	file=$1
-	sed -i "s|</body>|<br><br><hr><h3>In case you have any questions, my inbox is open! <a href='$url/contact.html'>Send me a message</a><h3></body>|" $file
+	sed -i "s|</body>|<br><br><hr><h3>In case you have any questions, my inbox is open! <a href='../contact.html'>Send me a message</a><h3></body>|" $file
 }
 
 # Move stylesheet to the build directory and clean old html files
