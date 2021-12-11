@@ -18,9 +18,3 @@ I push most of the stuff I make to my [Github](https://github.com/Toasterbirb)
 - [**This website**](https://github.com/Toasterbirb/personal-website). Yes, it is open source. Dig in and see how I'm generating these pages from markdown files with a simple shell script.
 <break>
 ---
-This website is also available as an onion site here for those who fancy tor:
-<div class="raisedLetters">
-	djymlwosbsrjfau7g6tk7czefr5ve6aov7nl7qnapsl7vtbl33l7snqd.onion<break>
-</div>
-<break>
-It is hosted on my Raspberry Pi, so the uptime might not be quite 24/7
