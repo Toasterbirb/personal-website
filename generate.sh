@@ -135,7 +135,7 @@ function _insertContactMeBlockToGuides()
 
 # Move stylesheet to the build directory and clean old html files
 rsync -a $stylesheet $sitePath/style.css
-rsync -a --delete-after $contentPath/pics $sitePath/
+rsync -a --delete-before $contentPath/pics $sitePath/
 find $sitePath -iname "*.html" -print | xargs rm -v
 [ -d $sitePath/guides ] || mkdir -p $sitePath/guides
 

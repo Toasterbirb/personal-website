@@ -7,15 +7,17 @@ As a GNU/Linux user, I am obligated to share my dotfiles (hidden files with . in
 <break>
 
 ![Desktop](./pics/desktop.png)
-<br><br>
-**OS**: [Arch Linux](https://archlinux.org/)\
+<break>
+![Desktop2](./pics/desktop2.png)
+<break>
+**OS**: [Void Linux](https://voidlinux.org/)\
 **Shell**: bash\
-**Icons**: Adwaita\
+**Icons**: [SE98](https://www.gnome-look.org/p/1581320)\
 **Font**: [mononoki](https://madmalik.github.io/mononoki/)\
 Wallpaper: [link](./pics/wallpaper.jpg)\
 **Colorscheme**: [nord](https://www.nordtheme.com/)\
 **Window manager**: [dwm](https://github.com/Toasterbirb/dde/tree/dev)\
-**GTK Theme**: [Vimix dark](https://www.opendesktop.org/s/Gnome/p/1013698/)\
+**GTK Theme**: [retrowave-glow](https://www.gnome-look.org/p/1391876)\
 **Terminal**: [Alacritty](https://github.com/alacritty/alacritty) [alacritty.yml](./dotfiles/alacritty.yml)\
 Filemanager: [lf](https://github.com/gokcehan/lf) [lfrc](./dotfiles/lfrc) [lp.sh](./dotfiles/lp.sh) [lfcd.sh](./dotfiles/lfcd.sh)\
 <br>
