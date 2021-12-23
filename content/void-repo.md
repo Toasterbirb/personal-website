@@ -28,4 +28,4 @@ List of current included packages:
 ## Issues
 If the there are any problems with this repository, please let me know by sending me mail at git@toasterbirb.com.
 <break>
-Also, if you are the owner of any packages listed above and you want it taken out of the repository, feel free to let me know, and I'll take action as quickly as I can.
+Also, if you are the owner of any project listed above as a package and you want it taken out of the repository, feel free to let me know, and I'll take action as quickly as I can.
