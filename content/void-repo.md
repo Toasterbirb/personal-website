@@ -2,6 +2,7 @@
 ;navlink=Void Repo
 
 # Void Linux Package Repository
+---
 I recently (end of 2021) decided to hop to [Void Linux](https://voidlinux.org/). One of the things I instantly noticed was that it has way less packages compared to Arch Linux and since the AUR isn't there to fill up the gaps, I had to install some of the software from source. I thought to myself that this was the opportunity to learn how to package software.
 <break>
 This repository contains stuff that I felt like was worth packaging and might be useful. I do not own the rights to everything, but since the software is open source, I felt like I have the right to "distribute" the sources in binary packages per their licenses. To fulfill the requirements of GPLv3, I will link to the sources of the packages and list any changes/patches done to the program, if I'm not the developer of that program.
