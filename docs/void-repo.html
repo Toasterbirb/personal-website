@@ -1,0 +1,35 @@
+<html>
+<head>
+<link rel="shortcut icon" type="image/jpg" href="./pics/jumala.png"> <meta property="og:type" content="website"> <meta property="og:site_name" content="Toasterbirb's website"> <meta property="og:title" content="Void Linux Package Repository"> <meta property="og:description" content="Toasterbirb's internet corner"> <meta property="og:image" content="./pics/jumala.png">
+<link rel = 'stylesheet' type='text/css' href='./style.css'>
+<title>
+Void Linux Package Repository
+</title>
+</head>
+<body>
+<nav> 				<ul> 					<li><a href='./index.html'>Home</a></li><li><a href='./gallery.html'>Gallery</a></li><li><a href='./birb2d.html'>Birb2D</a></li><li><a href='./guides.html'>Guides</a></li><li><a href='./void-repo.html'>Void Repo</a></li><li><a href='./contact.html'>Contact me</a></li><li><a href='./dotfiles.html'>Dotfiles</a></li> 				</ul>			</nav>
+<h1>Void Linux Package Repository</h1>
+I recently (end of 2021) decided to hop to <a href="https://voidlinux.org/">Void Linux</a>. One of the things I instantly noticed was that it has way less packages compared to Arch Linux and since the AUR isn't there to fill up the gaps, I had to install some of the software from source. I thought to myself that this was the opportunity to learn how to package software.
+<br><br>
+This repository contains stuff that I felt like was worth packaging and might be useful. I do not own the rights to everything, but since the software is open source, I felt like I have the right to &quot;distribute&quot; the sources in binary packages per their licenses. To fulfill the requirements of GPLv3, I will link to the sources of the packages and list any changes/patches done to the program, if I'm not the developer of that program.
+<h2>How to use the repo</h2>
+To use, create a file called <code>/etc/xbps.d/99-repo.conf</code> and add this line to it:
+<pre><code>repository=https://raw.githubusercontent.com/Toasterbirb/void-repo/master
+</code></pre>
+<h2>Packages</h2>
+List of current included packages:
+<details>
+    <summary>General</summary>
+<ul>
+<li><a href="https://github.com/Toasterbirb/dde">dde</a></li>
+<li><a href="https://github.com/ihsuy/Typon">Typon</a></li>
+<li><a href="https://github.com/pystardust/ytfzf">ytfzf</a></li>
+<li><a href="https://github.com/phillbush/xnotify">xnotify</a></li>
+</ul>
+</details>
+<h2>Issues</h2>
+If the there are any problems with this repository, please let me know by sending me mail at git@toasterbirb.com.
+<br><br>
+Also, if you are the owner of any packages listed above and you want it taken out of the repository, feel free to let me know, and I'll take action as quickly as I can.
+</body>
+</html>
