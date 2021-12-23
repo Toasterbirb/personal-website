@@ -19,6 +19,7 @@ List of current included packages:
 	<summary>General</summary>
 
 - [dde](https://github.com/Toasterbirb/dde)
+- [mononoki](https://github.com/madmalik/mononoki/tree/master)
 - [Typon](https://github.com/ihsuy/Typon)
 - [ytfzf](https://github.com/pystardust/ytfzf)
 - [xnotify](https://github.com/phillbush/xnotify)
