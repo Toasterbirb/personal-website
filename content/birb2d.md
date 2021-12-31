@@ -44,9 +44,9 @@ Birb2D is still in its infancy, but progress feels fast (like always in the begi
 </details>
 
 <details>
-	<summary>Ping pong</summary>
+	<summary>[GIF] Pong</summary>
 
-![Ping pong](./pics/ping_pong.png)
+![Ping pong](./pics/pong.gif)
 
 </details>
 

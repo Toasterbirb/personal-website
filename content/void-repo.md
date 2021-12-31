@@ -14,17 +14,7 @@ repository=https://raw.githubusercontent.com/Toasterbirb/void-repo/master
 ```
 
 ## Packages
-List of current included packages:
-<details>
-	<summary>General</summary>
-
-- [dde](https://github.com/Toasterbirb/dde) 0.1.1
-- [deluge](https://ftp.osuosl.org/pub/deluge/) 2.0.5
-- [mononoki-ttf](https://github.com/madmalik/mononoki/tree/master) 1.3
-- [Typon](https://github.com/ihsuy/Typon) 1.0
-- [ytfzf](https://github.com/pystardust/ytfzf) 1.2.0
-- [xnotify](https://github.com/phillbush/xnotify) 0.8.1
-</details>
+For up-to-date list of packages included check [here](https://toasterbirb.github.io/void-repo/) the [repository](https://github.com/Toasterbirb/void-repo) directly.
 
 ## Issues
 If the there are any problems with this repository, please let me know by sending me mail at git@toasterbirb.com.
