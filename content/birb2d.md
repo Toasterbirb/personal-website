@@ -10,7 +10,9 @@
 
 ## Games
 * [Flappy Birb](https://github.com/Toasterbirb/Flappy-Birb) (Finished, running with the first iteration of the engine)
-* [Ping Pong](https://github.com/Toasterbirb/Birb2D/tree/main/games/Ping-Pong) (WIP)
+* [Pong](https://github.com/Toasterbirb/Pong)
+* [SeedSplit](https://github.com/Toasterbirb/SeedSplit)
+* [Breakout](https://github.com/Toasterbirb/Breakout)
 
 ## Table of contents
 * [Why u do dis](#why)
@@ -51,9 +53,9 @@ Birb2D is still in its infancy, but progress feels fast (like always in the begi
 </details>
 
 <details>
-	<summary>Application for widget testing</summary>
+	<summary>Breakout</summary>
 
-![Application for widget testing](./pics/editor_test.png)
+![Breakout](https://github.com/Toasterbirb/Breakout/raw/master/screenshot.png)
 
 </details>
 
