@@ -1,4 +1,6 @@
 #!/bin/bash
+set -e
+
 contentPath=./content
 sitePath=./docs
 stylesheet=$contentPath/style.css
