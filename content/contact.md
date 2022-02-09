@@ -6,7 +6,7 @@
 I don't have too many accounts on social media platforms, but you can get in touch with me in a few ways.
 
 ## Matrix
-This is probably the easiest one (I actually get a notification). My username there is **@toasterbirb:matrix.org**. You can send me a private message there.
+This is probably the easiest one (I actually get a notification). My username there is **@toasterbirb:halogen.city**. You can send me a private message there.
 
 ## Email
 You can reach me via this address: **mail@toasterbirb.com**.
