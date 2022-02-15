@@ -16,21 +16,33 @@ As a GNU/Linux user, I am obligated to share my dotfiles (hidden files with . in
 <br><br>
 <img src="./pics/desktop2.png" alt="Desktop2">
 <br><br>
-<strong>OS</strong>: <a href="https://voidlinux.org/">Void Linux</a><br>
+<strong>OS</strong>: <a href="https://www.gentoo.org/">Gentoo Linux</a><br>
 <strong>Shell</strong>: bash<br>
 <strong>Icons</strong>: <a href="https://www.gnome-look.org/p/1581320">SE98</a><br>
 <strong>Font</strong>: <a href="https://madmalik.github.io/mononoki/">mononoki</a><br>
 Wallpaper: <a href="./pics/wallpaper.jpg">link</a><br>
 <strong>Colorscheme</strong>: <a href="https://www.nordtheme.com/">nord</a><br>
 <strong>Window manager</strong>: <a href="https://github.com/Toasterbirb/dde/tree/dev">dwm</a><br>
-<strong>GTK Theme</strong>: <a href="https://www.gnome-look.org/p/1391876">retrowave-glow</a><br>
-<strong>Terminal</strong>: <a href="https://github.com/alacritty/alacritty">Alacritty</a> <a href="./dotfiles/alacritty.yml">alacritty.yml</a><br>
+<strong>GTK Theme</strong>: <a href="https://www.gnome-look.org/p/1231025">CDE / Motif theme</a><br>
+<strong>Terminal</strong>: <a href="https://github.com/alacritty/alacritty">Alacritty</a> <a href="./dotfiles/alacritty.yml">alacritty.yml</a> | <a href="https://st.suckless.org/">st</a> <a href="https://github.com/Toasterbirb/dde/blob/main/st/config.def.h">config.def.h</a><br>
 Filemanager: <a href="https://github.com/gokcehan/lf">lf</a> <a href="./dotfiles/lfrc">lfrc</a> <a href="./dotfiles/lp.sh">lp.sh</a> <a href="./dotfiles/lfcd.sh">lfcd.sh</a><br>
 <br>
 <strong>Shell prompt</strong>: <code>PS1='[\u@\h \W]\$ '</code><br>
 <br>
 <hr>
-<h2>Notable lines in .bashrc</h2>
+<h2>Notable stuff in .bashrc</h2>
+<details>
+    <summary>Use mpv as a music player</summary>
+<h3>Dependencies</h3>
+<ul>
+<li>mpv</li>
+</ul>
+<h3>Code</h3>
+<pre><code class="language-block">alias mpva='mpv --loop-playlist --shuffle=yes --volume=40 --no-video --no-audio-display ./*'
+</code></pre>
+<h3>Usage</h3>
+Just navigate to a directory and run 'mpva'. Make sure to organize your music into directories as if they were different playlists. You could also create symlinks to have one song in multiple &quot;playlists&quot; at the same time.
+</details>
 <details>
     <summary>Translate Swedish text (or other languages) in pictures</summary>
 <h4>Dependencies</h4>

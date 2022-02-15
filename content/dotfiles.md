@@ -10,15 +10,15 @@ As a GNU/Linux user, I am obligated to share my dotfiles (hidden files with . in
 <break>
 ![Desktop2](./pics/desktop2.png)
 <break>
-**OS**: [Void Linux](https://voidlinux.org/)\
+**OS**: [Gentoo Linux](https://www.gentoo.org/)\
 **Shell**: bash\
 **Icons**: [SE98](https://www.gnome-look.org/p/1581320)\
 **Font**: [mononoki](https://madmalik.github.io/mononoki/)\
 Wallpaper: [link](./pics/wallpaper.jpg)\
 **Colorscheme**: [nord](https://www.nordtheme.com/)\
 **Window manager**: [dwm](https://github.com/Toasterbirb/dde/tree/dev)\
-**GTK Theme**: [retrowave-glow](https://www.gnome-look.org/p/1391876)\
-**Terminal**: [Alacritty](https://github.com/alacritty/alacritty) [alacritty.yml](./dotfiles/alacritty.yml)\
+**GTK Theme**: [CDE / Motif theme](https://www.gnome-look.org/p/1231025)\
+**Terminal**: [Alacritty](https://github.com/alacritty/alacritty) [alacritty.yml](./dotfiles/alacritty.yml) | [st](https://st.suckless.org/) [config.def.h](https://github.com/Toasterbirb/dde/blob/main/st/config.def.h)\
 Filemanager: [lf](https://github.com/gokcehan/lf) [lfrc](./dotfiles/lfrc) [lp.sh](./dotfiles/lp.sh) [lfcd.sh](./dotfiles/lfcd.sh)\
 <br>
 **Shell prompt**: `PS1='[\u@\h \W]\$ '`\
@@ -26,7 +26,23 @@ Filemanager: [lf](https://github.com/gokcehan/lf) [lfrc](./dotfiles/lfrc) [lp.sh
 
 ---
 
-## Notable lines in .bashrc
+## Notable stuff in .bashrc
+<details>
+	<summary>Use mpv as a music player</summary>
+
+### Dependencies
+- mpv
+
+### Code
+```block
+alias mpva='mpv --loop-playlist --shuffle=yes --volume=40 --no-video --no-audio-display ./*'
+```
+
+### Usage
+Just navigate to a directory and run 'mpva'. Make sure to organize your music into directories as if they were different playlists. You could also create symlinks to have one song in multiple "playlists" at the same time.
+
+</details>
+
 <details>
 	<summary>Translate Swedish text (or other languages) in pictures</summary>
 	
