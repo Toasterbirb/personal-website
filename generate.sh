@@ -169,12 +169,33 @@ do
 				*/guides/*) _insertContactMeBlockToGuides "$htmlpath" ;;
 			esac
 
+
 			# Replace markdown links to html links
 			sed -i s/\.md/.html/g $htmlpath
 			printf "\n"
 			;;
 	esac
 done
+
+function pullBirb2D()
+{
+	cd birb2d
+	git pull
+}
+
+function cloneBirb2D()
+{
+	git clone https://github.com/toasterbirb/birb2d
+	cd birb2d
+}
+
+# Clone/pull birb2d and generate docs for it
+[ -d ./docs/birb2d ] && rm -rf ./docs/birb2d
+[ -d ./birb2d ] && pullBirb2D || cloneBirb2D
+make clean
+make docs
+[ -d ../docs/birb2d ] || mkdir ../docs/birb2d
+mv ./docs/html/* ../docs/birb2d/ && echo "Birb2D docs moved to ./docs/birb2d"
 
 case $1 in
 	-d)
