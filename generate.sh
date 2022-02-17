@@ -190,12 +190,12 @@ function cloneBirb2D()
 }
 
 # Clone/pull birb2d and generate docs for it
-[ -d ./docs/birb2d ] && rm -rf ./docs/birb2d
+[ -d ./docs/birb2d_docs ] && rm -rf ./docs/birb2d_docs
 [ -d ./birb2d ] && pullBirb2D || cloneBirb2D
 make clean
 make docs
-[ -d ../docs/birb2d ] || mkdir ../docs/birb2d
-mv ./docs/html/* ../docs/birb2d/ && echo "Birb2D docs moved to ./docs/birb2d"
+[ -d ../docs/birb2d_docs ] || mkdir ../docs/birb2d_docs
+mv ./docs/html/* ../docs/birb2d_docs/ && echo "Birb2D docs moved to ./docs/birb2d_docs"
 
 case $1 in
 	-d)
