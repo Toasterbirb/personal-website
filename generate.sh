@@ -193,7 +193,7 @@ function cloneBirb2D()
 [ -d ./docs/birb2d_docs ] && rm -rf ./docs/birb2d_docs
 [ -d ./birb2d ] && pullBirb2D || cloneBirb2D
 make clean
-make docs
+doxygen ./doxygen_config
 [ -d ../docs/birb2d_docs ] || mkdir ../docs/birb2d_docs
 mv ./docs/html/* ../docs/birb2d_docs/ && echo "Birb2D docs moved to ./docs/birb2d_docs"
 

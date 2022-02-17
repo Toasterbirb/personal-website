@@ -6,7 +6,7 @@
 ---
 ## Links
 * [Github](https://github.com/Toasterbirb/Birb2D)
-* [Documentation](./birb2d/index.html)
+* [Documentation](./birb2d_docs/index.html)
 
 ## Games
 * [Flappy Birb](https://github.com/Toasterbirb/Flappy-Birb) (Finished, running with the first iteration of the engine)
