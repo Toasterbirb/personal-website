@@ -185,7 +185,7 @@ function pullBirb2D()
 
 function cloneBirb2D()
 {
-	git clone https://github.com/toasterbirb/birb2d
+	git clone --recursive https://github.com/toasterbirb/birb2d
 	cd birb2d
 }
 
