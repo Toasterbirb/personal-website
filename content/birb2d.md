@@ -8,7 +8,7 @@
 * [Github](https://github.com/Toasterbirb/Birb2D)
 * [Documentation](./birb2d_docs/index.html)
 
-## Games
+## Games / other programs made with Birb2D
 * [Flappy Birb](https://github.com/Toasterbirb/Flappy-Birb) (Finished, running with the first iteration of the engine)
 * [Pong](https://github.com/Toasterbirb/Pong)
 * [SeedSplit](https://github.com/Toasterbirb/SeedSplit)
@@ -42,6 +42,13 @@ Birb2D is still in its infancy, but progress feels fast (like always in the begi
 	<summary>[GIF] Flappy birb</summary>
 
 ![Flappy Birb](https://github.com/Toasterbirb/Flappy-Birb/raw/main/press/flappy_birb.gif)
+
+</details>
+
+<details>
+	<summary>SeedSplit - A simple speedrunning timer</summary>
+
+![SeedSplit](https://github.com/Toasterbirb/SeedSplit/raw/master/screenshot2.png)
 
 </details>
 
