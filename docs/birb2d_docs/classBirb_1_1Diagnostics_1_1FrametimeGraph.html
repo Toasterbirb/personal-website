@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Birb2D: Birb::EntityComponent::ClickComponent Struct Reference</title>
+<title>Birb2D: Birb::Diagnostics::FrametimeGraph Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -65,7 +65,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('structBirb_1_1EntityComponent_1_1ClickComponent.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('classBirb_1_1Diagnostics_1_1FrametimeGraph.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -87,42 +87,41 @@ $(document).ready(function(){initNavTree('structBirb_1_1EntityComponent_1_1Click
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="structBirb_1_1EntityComponent_1_1ClickComponent-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Birb::EntityComponent::ClickComponent Struct Reference</div></div>
+<a href="classBirb_1_1Diagnostics_1_1FrametimeGraph-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">Birb::Diagnostics::FrametimeGraph Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p><a class="el" href="structBirb_1_1EntityComponent_1_1ClickComponent.html" title="ClickComponent adds button functionality to the Entity.">ClickComponent</a> adds button functionality to the <a class="el" href="structBirb_1_1Entity.html" title="Entities are objects that contain all of the information required to render stuff.">Entity</a>.  
- <a href="structBirb_1_1EntityComponent_1_1ClickComponent.html#details">More...</a></p>
-
-<p><code>#include &lt;<a class="el" href="Entity_8hpp_source.html">Entity.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6676bc0055c590f3fd11013fcd925f58"><td class="memItemLeft" align="right" valign="top"><a id="a6676bc0055c590f3fd11013fcd925f58" name="a6676bc0055c590f3fd11013fcd925f58"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ClickComponent</b> (std::function&lt; void()&gt; p_onClick)</td></tr>
-<tr class="separator:a6676bc0055c590f3fd11013fcd925f58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73279d69d2b8e292744758f65965d9fd"><td class="memItemLeft" align="right" valign="top"><a id="a73279d69d2b8e292744758f65965d9fd" name="a73279d69d2b8e292744758f65965d9fd"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>FrametimeGraph</b> (const <a class="el" href="structBirb_1_1Rect.html">Rect</a> &amp;rect, const int &amp;pointCount, <a class="el" href="structBirb_1_1TimeStep.html">TimeStep</a> *timeStep)</td></tr>
+<tr class="separator:a73279d69d2b8e292744758f65965d9fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09fe2e35b968e87f8d7bd1417cb13368"><td class="memItemLeft" align="right" valign="top"><a id="a09fe2e35b968e87f8d7bd1417cb13368" name="a09fe2e35b968e87f8d7bd1417cb13368"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Render</b> ()</td></tr>
+<tr class="separator:a09fe2e35b968e87f8d7bd1417cb13368"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a87099732e27e77d6a050a3f5057b90c9"><td class="memItemLeft" align="right" valign="top"><a id="a87099732e27e77d6a050a3f5057b90c9" name="a87099732e27e77d6a050a3f5057b90c9"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>active</b></td></tr>
-<tr class="separator:a87099732e27e77d6a050a3f5057b90c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d50f05474138f3a57e7980d8029c7b5"><td class="memItemLeft" align="right" valign="top"><a id="a4d50f05474138f3a57e7980d8029c7b5" name="a4d50f05474138f3a57e7980d8029c7b5"></a>
-std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>onClick</b></td></tr>
-<tr class="separator:a4d50f05474138f3a57e7980d8029c7b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9eda8fde44d9d2b07c31dd075bb37624"><td class="memItemLeft" align="right" valign="top"><a id="a9eda8fde44d9d2b07c31dd075bb37624" name="a9eda8fde44d9d2b07c31dd075bb37624"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>enabled</b></td></tr>
+<tr class="separator:a9eda8fde44d9d2b07c31dd075bb37624"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72eddc70eaea9ef7803a561540dd48df"><td class="memItemLeft" align="right" valign="top"><a id="a72eddc70eaea9ef7803a561540dd48df" name="a72eddc70eaea9ef7803a561540dd48df"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>pointCount</b></td></tr>
+<tr class="separator:a72eddc70eaea9ef7803a561540dd48df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a240034f8fd08ee1c957c6b4e2fbcba34"><td class="memItemLeft" align="right" valign="top"><a id="a240034f8fd08ee1c957c6b4e2fbcba34" name="a240034f8fd08ee1c957c6b4e2fbcba34"></a>
+<a class="el" href="structBirb_1_1Rect.html">Rect</a>&#160;</td><td class="memItemRight" valign="bottom"><b>rect</b></td></tr>
+<tr class="separator:a240034f8fd08ee1c957c6b4e2fbcba34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p ><a class="el" href="structBirb_1_1EntityComponent_1_1ClickComponent.html" title="ClickComponent adds button functionality to the Entity.">ClickComponent</a> adds button functionality to the <a class="el" href="structBirb_1_1Entity.html" title="Entities are objects that contain all of the information required to render stuff.">Entity</a>. </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
-<li>include/<a class="el" href="Entity_8hpp_source.html">Entity.hpp</a></li>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>include/<a class="el" href="Diagnostics_8hpp_source.html">Diagnostics.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>Birb</b></li><li class="navelem"><b>EntityComponent</b></li><li class="navelem"><a class="el" href="structBirb_1_1EntityComponent_1_1ClickComponent.html">ClickComponent</a></li>
+    <li class="navelem"><b>Birb</b></li><li class="navelem"><b>Diagnostics</b></li><li class="navelem"><a class="el" href="classBirb_1_1Diagnostics_1_1FrametimeGraph.html">FrametimeGraph</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
   </ul>
 </div>

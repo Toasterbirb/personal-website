@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['reloadsprite_0',['ReloadSprite',['../structBirb_1_1Entity.html#ae77a4fb732f3f332d49d0cfb87eb4966',1,'Birb::Entity']]],
-  ['resetanimationatlas_1',['ResetAnimationAtlas',['../structBirb_1_1EntityComponent_1_1AnimationComponent.html#aeb85db81838726e3737ffd6f18b3d119',1,'Birb::EntityComponent::AnimationComponent']]],
-  ['round_2',['Round',['../structBirb_1_1Math.html#afec5762d03934d2afc1a540e199c69fa',1,'Birb::Math']]],
-  ['running_3',['Running',['../structBirb_1_1TimeStep.html#a94c403de00f24d0c9ffd9c6e7ff9d6b8',1,'Birb::TimeStep']]]
+  ['lerp_0',['Lerp',['../namespaceBirb_1_1Math.html#a878e9c470199b4da4933d3333067ba87',1,'Birb::Math::Lerp(const int &amp;a, const int &amp;b, const float &amp;t)'],['../namespaceBirb_1_1Math.html#ad3c2d067c2ef7a641d875aa8360da183',1,'Birb::Math::Lerp(const float &amp;a, const float &amp;b, const float &amp;t)'],['../namespaceBirb_1_1Math.html#a80f160716e45e2282329cbbc226b6b36',1,'Birb::Math::Lerp(const double &amp;a, const double &amp;b, const float &amp;t)'],['../namespaceBirb_1_1Math.html#a88831781c4d25ab95dac838703c22c33',1,'Birb::Math::Lerp(const Vector2f &amp;a, const Vector2f &amp;b, const float &amp;t)'],['../namespaceBirb_1_1Math.html#a3d681020378fe10f91a70c4169dbba1a',1,'Birb::Math::Lerp(const Vector2int &amp;a, const Vector2int &amp;b, const float &amp;t)'],['../namespaceBirb_1_1Math.html#a109e53376956d557534674501f0dfbc5',1,'Birb::Math::Lerp(const Vector3f &amp;a, const Vector3f &amp;b, const float &amp;t)'],['../namespaceBirb_1_1Math.html#a938d3976b475980594cc4a712ae03a80',1,'Birb::Math::Lerp(const Vector3int &amp;a, const Vector3int &amp;b, const float &amp;t)']]],
+  ['loadsprite_1',['LoadSprite',['../structBirb_1_1Entity.html#a284908ef1b3d80b26a370cca4e83b83d',1,'Birb::Entity']]]
 ];

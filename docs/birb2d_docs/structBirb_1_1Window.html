@@ -95,30 +95,40 @@ $(document).ready(function(){initNavTree('structBirb_1_1Window.html',''); initRe
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a24bf565faaeb206431604ac563a515fa"><td class="memItemLeft" align="right" valign="top"><a id="a24bf565faaeb206431604ac563a515fa" name="a24bf565faaeb206431604ac563a515fa"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Window</b> (std::string p_title, <a class="el" href="structBirb_1_1Vector2int.html">Vector2int</a> p_window_dimensions, int p_refresh_rate, bool resizable)</td></tr>
-<tr class="separator:a24bf565faaeb206431604ac563a515fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaf774ba772abd83de9d36ec68cb9ce4"><td class="memItemLeft" align="right" valign="top"><a id="abaf774ba772abd83de9d36ec68cb9ce4" name="abaf774ba772abd83de9d36ec68cb9ce4"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Window</b> ()</td></tr>
+<tr class="memdesc:abaf774ba772abd83de9d36ec68cb9ce4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a window without any parameters. Shouldn't be used. <br /></td></tr>
+<tr class="separator:abaf774ba772abd83de9d36ec68cb9ce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a879c33ff7b6f5cc3874bb5e915a96e38"><td class="memItemLeft" align="right" valign="top"><a id="a879c33ff7b6f5cc3874bb5e915a96e38" name="a879c33ff7b6f5cc3874bb5e915a96e38"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Window</b> (const std::string &amp;p_title, const <a class="el" href="structBirb_1_1Vector2int.html">Vector2int</a> &amp;p_window_dimensions, const int &amp;p_refresh_rate, const bool &amp;resizable)</td></tr>
+<tr class="memdesc:a879c33ff7b6f5cc3874bb5e915a96e38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a window and initializes SDL2 stuff and a renderer. <br /></td></tr>
+<tr class="separator:a879c33ff7b6f5cc3874bb5e915a96e38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcbfd2cf0923af9235ad1045d6c2361d"><td class="memItemLeft" align="right" valign="top"><a id="abcbfd2cf0923af9235ad1045d6c2361d" name="abcbfd2cf0923af9235ad1045d6c2361d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Clear</b> ()</td></tr>
+<tr class="memdesc:abcbfd2cf0923af9235ad1045d6c2361d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the renderer so new stuff can be rendered to it without old stuff staying. <br /></td></tr>
 <tr class="separator:abcbfd2cf0923af9235ad1045d6c2361d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad783e2a2774419011c716003fb1cb5bd"><td class="memItemLeft" align="right" valign="top"><a id="ad783e2a2774419011c716003fb1cb5bd" name="ad783e2a2774419011c716003fb1cb5bd"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Display</b> ()</td></tr>
+<tr class="memdesc:ad783e2a2774419011c716003fb1cb5bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays the renderer. Should be run after everything has been drawn to the renderer. <br /></td></tr>
 <tr class="separator:ad783e2a2774419011c716003fb1cb5bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac4c4c83e0effede2b210058b13ae48d"><td class="memItemLeft" align="right" valign="top"><a id="aac4c4c83e0effede2b210058b13ae48d" name="aac4c4c83e0effede2b210058b13ae48d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Cleanup</b> ()</td></tr>
+<tr class="memdesc:aac4c4c83e0effede2b210058b13ae48d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees resources allocated for the window and deinitializes SDL2 things. <br /></td></tr>
 <tr class="separator:aac4c4c83e0effede2b210058b13ae48d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4714f32bd92ddb929f237c25eb3fbc1a"><td class="memItemLeft" align="right" valign="top"><a id="a4714f32bd92ddb929f237c25eb3fbc1a" name="a4714f32bd92ddb929f237c25eb3fbc1a"></a>
 <a class="el" href="structBirb_1_1Vector2int.html">Vector2int</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CursorPosition</b> ()</td></tr>
+<tr class="memdesc:a4714f32bd92ddb929f237c25eb3fbc1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current cursor position relative to the window. <br /></td></tr>
 <tr class="separator:a4714f32bd92ddb929f237c25eb3fbc1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fd1d74b8ef0ef54bf77a15e14dac888"><td class="memItemLeft" align="right" valign="top"><a id="a7fd1d74b8ef0ef54bf77a15e14dac888" name="a7fd1d74b8ef0ef54bf77a15e14dac888"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>CursorInRect</b> (<a class="el" href="structBirb_1_1Rect.html">Rect</a> rect)</td></tr>
-<tr class="separator:a7fd1d74b8ef0ef54bf77a15e14dac888"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d8815127121223c9df6fb7c23ef3793"><td class="memItemLeft" align="right" valign="top"><a id="a7d8815127121223c9df6fb7c23ef3793" name="a7d8815127121223c9df6fb7c23ef3793"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetWindowSize</b> (<a class="el" href="structBirb_1_1Vector2int.html">Vector2int</a> dimensions)</td></tr>
-<tr class="separator:a7d8815127121223c9df6fb7c23ef3793"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:addbd8b7bbb5809d513200bb4b96aa55f"><td class="memItemLeft" align="right" valign="top"><a id="addbd8b7bbb5809d513200bb4b96aa55f" name="addbd8b7bbb5809d513200bb4b96aa55f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>EventTick</b> (SDL_Event event, bool *GameRunning)</td></tr>
-<tr class="separator:addbd8b7bbb5809d513200bb4b96aa55f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e9123c88ebd7b8b7d402791dd83dd33"><td class="memItemLeft" align="right" valign="top"><a id="a7e9123c88ebd7b8b7d402791dd83dd33" name="a7e9123c88ebd7b8b7d402791dd83dd33"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>CursorInRect</b> (const <a class="el" href="structBirb_1_1Rect.html">Rect</a> &amp;rect)</td></tr>
+<tr class="memdesc:a7e9123c88ebd7b8b7d402791dd83dd33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the cursor is inside of the given rect dimensions. <br /></td></tr>
+<tr class="separator:a7e9123c88ebd7b8b7d402791dd83dd33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae376e6e75490b829b8ee6b4fdaeeb480"><td class="memItemLeft" align="right" valign="top"><a id="ae376e6e75490b829b8ee6b4fdaeeb480" name="ae376e6e75490b829b8ee6b4fdaeeb480"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetWindowSize</b> (const <a class="el" href="structBirb_1_1Vector2int.html">Vector2int</a> &amp;dimensions)</td></tr>
+<tr class="separator:ae376e6e75490b829b8ee6b4fdaeeb480"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04cb6fadd45cb6919d3313a66d082c96"><td class="memItemLeft" align="right" valign="top"><a id="a04cb6fadd45cb6919d3313a66d082c96" name="a04cb6fadd45cb6919d3313a66d082c96"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>EventTick</b> (const SDL_Event &amp;event, bool *GameRunning)</td></tr>
+<tr class="separator:a04cb6fadd45cb6919d3313a66d082c96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82185986266edc7aec8b7cad14225990"><td class="memItemLeft" align="right" valign="top"><a id="a82185986266edc7aec8b7cad14225990" name="a82185986266edc7aec8b7cad14225990"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>PollEvents</b> ()</td></tr>
 <tr class="memdesc:a82185986266edc7aec8b7cad14225990"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs SDL_PollEvent and saves the result to the <em>event</em> variable. <br /></td></tr>
@@ -128,12 +138,15 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>PollEvents</b> ()</td
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a2bb8275642c9fa8ea20d384c5d63487c"><td class="memItemLeft" align="right" valign="top"><a id="a2bb8275642c9fa8ea20d384c5d63487c" name="a2bb8275642c9fa8ea20d384c5d63487c"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>InitSDL</b> ()</td></tr>
+<tr class="memdesc:a2bb8275642c9fa8ea20d384c5d63487c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes SDL2 (if its not already initialized) <br /></td></tr>
 <tr class="separator:a2bb8275642c9fa8ea20d384c5d63487c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83a284c50264780a280473f373802bba"><td class="memItemLeft" align="right" valign="top"><a id="a83a284c50264780a280473f373802bba" name="a83a284c50264780a280473f373802bba"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>InitSDL_ttf</b> ()</td></tr>
+<tr class="memdesc:a83a284c50264780a280473f373802bba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes SDL2_ttf (if its not already initialized) <br /></td></tr>
 <tr class="separator:a83a284c50264780a280473f373802bba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c1ba2dfc97b34c1f3c4dbf0bf995d96"><td class="memItemLeft" align="right" valign="top"><a id="a5c1ba2dfc97b34c1f3c4dbf0bf995d96" name="a5c1ba2dfc97b34c1f3c4dbf0bf995d96"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>InitSDL_image</b> ()</td></tr>
+<tr class="memdesc:a5c1ba2dfc97b34c1f3c4dbf0bf995d96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes SDL2_image (if its not already initialized) <br /></td></tr>
 <tr class="separator:a5c1ba2dfc97b34c1f3c4dbf0bf995d96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>

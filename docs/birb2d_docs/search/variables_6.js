@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['original_5fwindow_5fdimensions_0',['original_window_dimensions',['../structBirb_1_1Window.html#ad55a282855aba062cc5bce10e0335933',1,'Birb::Window']]]
+  ['maxvalue_0',['maxValue',['../structBirb_1_1EntityComponent_1_1ProgressBar.html#a1b7c3b7027a388da4924ed8616c96d19',1,'Birb::EntityComponent::ProgressBar']]],
+  ['minvalue_1',['minValue',['../structBirb_1_1EntityComponent_1_1ProgressBar.html#a4d828a5893394fd6189cf6dd098120a1',1,'Birb::EntityComponent::ProgressBar']]]
 ];

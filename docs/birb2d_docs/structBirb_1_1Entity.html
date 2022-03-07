@@ -99,33 +99,37 @@ $(document).ready(function(){initNavTree('structBirb_1_1Entity.html',''); initRe
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8d67ebf31082e7d39330dfc460076b9b"><td class="memItemLeft" align="right" valign="top"><a id="a8d67ebf31082e7d39330dfc460076b9b" name="a8d67ebf31082e7d39330dfc460076b9b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Entity</b> (std::string p_name)</td></tr>
-<tr class="memdesc:a8d67ebf31082e7d39330dfc460076b9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates empty <a class="el" href="structBirb_1_1Entity.html" title="Entities are objects that contain all of the information required to render stuff.">Entity</a> object. <br /></td></tr>
-<tr class="separator:a8d67ebf31082e7d39330dfc460076b9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaebc743d3ea787c891b2089c52eb2c0b"><td class="memItemLeft" align="right" valign="top"><a id="aaebc743d3ea787c891b2089c52eb2c0b" name="aaebc743d3ea787c891b2089c52eb2c0b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Entity</b> (std::string p_name, <a class="el" href="structBirb_1_1Rect.html">Rect</a> p_rect, SDL_Texture *p_texture)</td></tr>
-<tr class="memdesc:aaebc743d3ea787c891b2089c52eb2c0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an <a class="el" href="structBirb_1_1Entity.html" title="Entities are objects that contain all of the information required to render stuff.">Entity</a> with a SDL_Texture to render with custom scale. <br /></td></tr>
-<tr class="separator:aaebc743d3ea787c891b2089c52eb2c0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1aa4784cb0ee60ad7ff68e7a984d25d0"><td class="memItemLeft" align="right" valign="top"><a id="a1aa4784cb0ee60ad7ff68e7a984d25d0" name="a1aa4784cb0ee60ad7ff68e7a984d25d0"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Entity</b> (std::string p_name, <a class="el" href="structBirb_1_1Vector2int.html">Vector2int</a> pos, <a class="el" href="structBirb_1_1EntityComponent_1_1TextComponent.html">EntityComponent::TextComponent</a> p_textComponent)</td></tr>
-<tr class="memdesc:a1aa4784cb0ee60ad7ff68e7a984d25d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a Text <a class="el" href="structBirb_1_1Entity.html" title="Entities are objects that contain all of the information required to render stuff.">Entity</a> using a TextComponent. <br /></td></tr>
-<tr class="separator:a1aa4784cb0ee60ad7ff68e7a984d25d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a488855199455e51ab476ecb09a7acf17"><td class="memItemLeft" align="right" valign="top"><a id="a488855199455e51ab476ecb09a7acf17" name="a488855199455e51ab476ecb09a7acf17"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Entity</b> (std::string p_name, <a class="el" href="structBirb_1_1Vector2int.html">Vector2int</a> pos, SDL_Texture *p_texture)</td></tr>
-<tr class="memdesc:a488855199455e51ab476ecb09a7acf17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an <a class="el" href="structBirb_1_1Entity.html" title="Entities are objects that contain all of the information required to render stuff.">Entity</a> with a SDL_Texture to render without specifying a scale. <br /></td></tr>
-<tr class="separator:a488855199455e51ab476ecb09a7acf17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa39fb6460ae32fdc2c46f8362aa607b2"><td class="memItemLeft" align="right" valign="top"><a id="aa39fb6460ae32fdc2c46f8362aa607b2" name="aa39fb6460ae32fdc2c46f8362aa607b2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetText</b> (std::string newText)</td></tr>
-<tr class="memdesc:aa39fb6460ae32fdc2c46f8362aa607b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the text in TextComponent and reload the sprite. <br /></td></tr>
-<tr class="separator:aa39fb6460ae32fdc2c46f8362aa607b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68531115a7f5b4b2c24e8ba66f6cb907"><td class="memItemLeft" align="right" valign="top"><a id="a68531115a7f5b4b2c24e8ba66f6cb907" name="a68531115a7f5b4b2c24e8ba66f6cb907"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Entity</b> (const std::string &amp;p_name)</td></tr>
+<tr class="memdesc:a68531115a7f5b4b2c24e8ba66f6cb907"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates empty <a class="el" href="structBirb_1_1Entity.html" title="Entities are objects that contain all of the information required to render stuff.">Entity</a> object. <br /></td></tr>
+<tr class="separator:a68531115a7f5b4b2c24e8ba66f6cb907"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11607b6cd04149b473bb8ca06f06a05c"><td class="memItemLeft" align="right" valign="top"><a id="a11607b6cd04149b473bb8ca06f06a05c" name="a11607b6cd04149b473bb8ca06f06a05c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Entity</b> (const std::string &amp;p_name, const <a class="el" href="structBirb_1_1Rect.html">Rect</a> &amp;p_rect, SDL_Texture *p_texture)</td></tr>
+<tr class="memdesc:a11607b6cd04149b473bb8ca06f06a05c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an <a class="el" href="structBirb_1_1Entity.html" title="Entities are objects that contain all of the information required to render stuff.">Entity</a> with a SDL_Texture to render with custom scale. <br /></td></tr>
+<tr class="separator:a11607b6cd04149b473bb8ca06f06a05c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d58e0590c0ba3dcfa96399ca0ed20e0"><td class="memItemLeft" align="right" valign="top"><a id="a0d58e0590c0ba3dcfa96399ca0ed20e0" name="a0d58e0590c0ba3dcfa96399ca0ed20e0"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Entity</b> (const std::string &amp;p_name, const <a class="el" href="structBirb_1_1Vector2int.html">Vector2int</a> &amp;pos, SDL_Texture *p_texture, const <a class="el" href="structBirb_1_1EntityComponent_1_1Animation.html">EntityComponent::Animation</a> &amp;p_animationComponent)</td></tr>
+<tr class="memdesc:a0d58e0590c0ba3dcfa96399ca0ed20e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a Animation <a class="el" href="structBirb_1_1Entity.html" title="Entities are objects that contain all of the information required to render stuff.">Entity</a> using a Animation. <br /></td></tr>
+<tr class="separator:a0d58e0590c0ba3dcfa96399ca0ed20e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba916c13ee851e674c076de95a4c2df9"><td class="memItemLeft" align="right" valign="top"><a id="aba916c13ee851e674c076de95a4c2df9" name="aba916c13ee851e674c076de95a4c2df9"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Entity</b> (const std::string &amp;p_name, const <a class="el" href="structBirb_1_1Vector2int.html">Vector2int</a> &amp;pos, const <a class="el" href="structBirb_1_1EntityComponent_1_1Text.html">EntityComponent::Text</a> &amp;p_textComponent)</td></tr>
+<tr class="memdesc:aba916c13ee851e674c076de95a4c2df9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a Text <a class="el" href="structBirb_1_1Entity.html" title="Entities are objects that contain all of the information required to render stuff.">Entity</a> using a Text. <br /></td></tr>
+<tr class="separator:aba916c13ee851e674c076de95a4c2df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab58a9d9bbafcfe637990e03dd41fceed"><td class="memItemLeft" align="right" valign="top"><a id="ab58a9d9bbafcfe637990e03dd41fceed" name="ab58a9d9bbafcfe637990e03dd41fceed"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Entity</b> (const std::string &amp;p_name, const <a class="el" href="structBirb_1_1Vector2int.html">Vector2int</a> &amp;pos, SDL_Texture *p_texture)</td></tr>
+<tr class="memdesc:ab58a9d9bbafcfe637990e03dd41fceed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an <a class="el" href="structBirb_1_1Entity.html" title="Entities are objects that contain all of the information required to render stuff.">Entity</a> with a SDL_Texture to render without specifying a scale. <br /></td></tr>
+<tr class="separator:ab58a9d9bbafcfe637990e03dd41fceed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2def15d3e14c298479761bdcee3c611d"><td class="memItemLeft" align="right" valign="top"><a id="a2def15d3e14c298479761bdcee3c611d" name="a2def15d3e14c298479761bdcee3c611d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetText</b> (const std::string &amp;newText)</td></tr>
+<tr class="memdesc:a2def15d3e14c298479761bdcee3c611d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the text in Text and reload the sprite. <br /></td></tr>
+<tr class="separator:a2def15d3e14c298479761bdcee3c611d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a002bfb3de02e27912fdc5710a3943103"><td class="memItemLeft" align="right" valign="top"><a id="a002bfb3de02e27912fdc5710a3943103" name="a002bfb3de02e27912fdc5710a3943103"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFont</b> (TTF_Font *font)</td></tr>
-<tr class="memdesc:a002bfb3de02e27912fdc5710a3943103"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the font in TextComponent and reload the sprite. <br /></td></tr>
+<tr class="memdesc:a002bfb3de02e27912fdc5710a3943103"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the font in Text and reload the sprite. <br /></td></tr>
 <tr class="separator:a002bfb3de02e27912fdc5710a3943103"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03e4eed0172e40af727e6531f14f00d0"><td class="memItemLeft" align="right" valign="top"><a id="a03e4eed0172e40af727e6531f14f00d0" name="a03e4eed0172e40af727e6531f14f00d0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetColor</b> (SDL_Color *color)</td></tr>
-<tr class="memdesc:a03e4eed0172e40af727e6531f14f00d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the color in TextComponent and reload the sprite. <br /></td></tr>
+<tr class="memdesc:a03e4eed0172e40af727e6531f14f00d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the color in Text and reload the sprite. <br /></td></tr>
 <tr class="separator:a03e4eed0172e40af727e6531f14f00d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a284908ef1b3d80b26a370cca4e83b83d"><td class="memItemLeft" align="right" valign="top"><a id="a284908ef1b3d80b26a370cca4e83b83d" name="a284908ef1b3d80b26a370cca4e83b83d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>LoadSprite</b> ()</td></tr>
@@ -143,10 +147,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetBaseEntityValues</
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>isHovering</b> ()</td></tr>
 <tr class="memdesc:a654f37f1d1706fc74e75daf2ce1af183"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the cursor is hovering over this entity. <br /></td></tr>
 <tr class="separator:a654f37f1d1706fc74e75daf2ce1af183"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5422053bbc842179d733ef204a8dd004"><td class="memItemLeft" align="right" valign="top"><a id="a5422053bbc842179d733ef204a8dd004" name="a5422053bbc842179d733ef204a8dd004"></a>
-<a class="el" href="structBirb_1_1Vector2int.html">Vector2int</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getAtlasPosition</b> (int frame)</td></tr>
-<tr class="memdesc:a5422053bbc842179d733ef204a8dd004"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get position in a texture atlas given the sprite index. <br /></td></tr>
-<tr class="separator:a5422053bbc842179d733ef204a8dd004"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe037037bfe649506957fc9d46bd422c"><td class="memItemLeft" align="right" valign="top"><a id="abe037037bfe649506957fc9d46bd422c" name="abe037037bfe649506957fc9d46bd422c"></a>
+<a class="el" href="structBirb_1_1Vector2int.html">Vector2int</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getAtlasPosition</b> (const int &amp;frame)</td></tr>
+<tr class="memdesc:abe037037bfe649506957fc9d46bd422c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get position in a texture atlas given the sprite index. <br /></td></tr>
+<tr class="separator:abe037037bfe649506957fc9d46bd422c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -158,6 +162,10 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>name</b></td><
 SDL_Texture *&#160;</td><td class="memItemRight" valign="bottom"><b>sprite</b></td></tr>
 <tr class="memdesc:a1dc94a2a24176a724460cdcb4f2bf33c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprite to be rendered. <br /></td></tr>
 <tr class="separator:a1dc94a2a24176a724460cdcb4f2bf33c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a466b79ea7d4b41fe7699ce71c0167223"><td class="memItemLeft" align="right" valign="top"><a id="a466b79ea7d4b41fe7699ce71c0167223" name="a466b79ea7d4b41fe7699ce71c0167223"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>active</b></td></tr>
+<tr class="memdesc:a466b79ea7d4b41fe7699ce71c0167223"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inactive entities will be skipped during rendering. <br /></td></tr>
+<tr class="separator:a466b79ea7d4b41fe7699ce71c0167223"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea8bf795a4c1f3642af91ea93c078d5f"><td class="memItemLeft" align="right" valign="top"><a id="aea8bf795a4c1f3642af91ea93c078d5f" name="aea8bf795a4c1f3642af91ea93c078d5f"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>angle</b></td></tr>
 <tr class="memdesc:aea8bf795a4c1f3642af91ea93c078d5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the rotation of the entity when rendering it. <br /></td></tr>
@@ -170,18 +178,22 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>angle</b></td></tr>
 <a class="el" href="structBirb_1_1Vector2f.html">Vector2f</a>&#160;</td><td class="memItemRight" valign="bottom"><b>localScale</b></td></tr>
 <tr class="memdesc:ada6ad633e3c5ca0fd8da78d940a35cf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scale modifier for the <a class="el" href="structBirb_1_1Entity.html" title="Entities are objects that contain all of the information required to render stuff.">Entity</a> rendering. <br /></td></tr>
 <tr class="separator:ada6ad633e3c5ca0fd8da78d940a35cf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa17a283a41de0abac1b2ec80d7d52459"><td class="memItemLeft" align="right" valign="top"><a id="aa17a283a41de0abac1b2ec80d7d52459" name="aa17a283a41de0abac1b2ec80d7d52459"></a>
-<a class="el" href="structBirb_1_1EntityComponent_1_1TextComponent.html">EntityComponent::TextComponent</a>&#160;</td><td class="memItemRight" valign="bottom"><b>textComponent</b></td></tr>
-<tr class="memdesc:aa17a283a41de0abac1b2ec80d7d52459"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables the rendering of Text. <br /></td></tr>
-<tr class="separator:aa17a283a41de0abac1b2ec80d7d52459"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a512b3bf5534492ac75a2226611ec2272"><td class="memItemLeft" align="right" valign="top"><a id="a512b3bf5534492ac75a2226611ec2272" name="a512b3bf5534492ac75a2226611ec2272"></a>
-<a class="el" href="structBirb_1_1EntityComponent_1_1ClickComponent.html">EntityComponent::ClickComponent</a>&#160;</td><td class="memItemRight" valign="bottom"><b>clickComponent</b></td></tr>
-<tr class="memdesc:a512b3bf5534492ac75a2226611ec2272"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables button-like functionality. <br /></td></tr>
-<tr class="separator:a512b3bf5534492ac75a2226611ec2272"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f819be6bd0f6b8e969b5c5b75dbbdf1"><td class="memItemLeft" align="right" valign="top"><a id="a3f819be6bd0f6b8e969b5c5b75dbbdf1" name="a3f819be6bd0f6b8e969b5c5b75dbbdf1"></a>
-<a class="el" href="structBirb_1_1EntityComponent_1_1AnimationComponent.html">EntityComponent::AnimationComponent</a>&#160;</td><td class="memItemRight" valign="bottom"><b>animationComponent</b></td></tr>
-<tr class="memdesc:a3f819be6bd0f6b8e969b5c5b75dbbdf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables animations for sprite rendering. <br /></td></tr>
-<tr class="separator:a3f819be6bd0f6b8e969b5c5b75dbbdf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2acdea97b21a0ab254092692f180d310"><td class="memItemLeft" align="right" valign="top"><a id="a2acdea97b21a0ab254092692f180d310" name="a2acdea97b21a0ab254092692f180d310"></a>
+<a class="el" href="structBirb_1_1EntityComponent_1_1Text.html">EntityComponent::Text</a>&#160;</td><td class="memItemRight" valign="bottom"><b>textComponent</b></td></tr>
+<tr class="memdesc:a2acdea97b21a0ab254092692f180d310"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables the rendering of Text. <br /></td></tr>
+<tr class="separator:a2acdea97b21a0ab254092692f180d310"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ba571966f001e6b6661208946d9c243"><td class="memItemLeft" align="right" valign="top"><a id="a7ba571966f001e6b6661208946d9c243" name="a7ba571966f001e6b6661208946d9c243"></a>
+<a class="el" href="structBirb_1_1EntityComponent_1_1Click.html">EntityComponent::Click</a>&#160;</td><td class="memItemRight" valign="bottom"><b>clickComponent</b></td></tr>
+<tr class="memdesc:a7ba571966f001e6b6661208946d9c243"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables button-like functionality. <br /></td></tr>
+<tr class="separator:a7ba571966f001e6b6661208946d9c243"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a665f5f8a54d7aaa2165b872f09d0a28e"><td class="memItemLeft" align="right" valign="top"><a id="a665f5f8a54d7aaa2165b872f09d0a28e" name="a665f5f8a54d7aaa2165b872f09d0a28e"></a>
+<a class="el" href="structBirb_1_1EntityComponent_1_1Animation.html">EntityComponent::Animation</a>&#160;</td><td class="memItemRight" valign="bottom"><b>animationComponent</b></td></tr>
+<tr class="memdesc:a665f5f8a54d7aaa2165b872f09d0a28e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables animations for sprite rendering. <br /></td></tr>
+<tr class="separator:a665f5f8a54d7aaa2165b872f09d0a28e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a743b0618ebe31f7a7969674d94d120f8"><td class="memItemLeft" align="right" valign="top"><a id="a743b0618ebe31f7a7969674d94d120f8" name="a743b0618ebe31f7a7969674d94d120f8"></a>
+<a class="el" href="structBirb_1_1EntityComponent_1_1ProgressBar.html">EntityComponent::ProgressBar</a>&#160;</td><td class="memItemRight" valign="bottom"><b>progressBarComponent</b></td></tr>
+<tr class="memdesc:a743b0618ebe31f7a7969674d94d120f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turns the entity into a progress bar. <br /></td></tr>
+<tr class="separator:a743b0618ebe31f7a7969674d94d120f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Entities are objects that contain all of the information required to render stuff. </p>

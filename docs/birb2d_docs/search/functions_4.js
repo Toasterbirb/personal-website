@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['init_0',['Init',['../structBirb_1_1Audio.html#af992077e2f91e7f1887429f6a271b99f',1,'Birb::Audio::Init()'],['../structBirb_1_1TimeStep.html#a1b06bcb255d28e85bb633aa4130e3423',1,'Birb::TimeStep::Init()']]],
-  ['ishovering_1',['isHovering',['../structBirb_1_1Entity.html#a654f37f1d1706fc74e75daf2ce1af183',1,'Birb::Entity']]]
+  ['findhighestvalue_0',['FindHighestValue',['../namespaceBirb_1_1Math.html#a61cfa84dc775de3b8c0a5a289eda7a19',1,'Birb::Math::FindHighestValue(T *values, const int &amp;valueCount)'],['../namespaceBirb_1_1Math.html#a398593c6a02d0895a96473647d490cb6',1,'Birb::Math::FindHighestValue(const std::vector&lt; T &gt; &amp;values)']]],
+  ['findlowestvalue_1',['FindLowestValue',['../namespaceBirb_1_1Math.html#aa453e79cb46954439bb271c5f0bf4963',1,'Birb::Math::FindLowestValue(T *values, const int &amp;valueCount)'],['../namespaceBirb_1_1Math.html#aaf419ae762fc4a7c0962862a84d4d244',1,'Birb::Math::FindLowestValue(const std::vector&lt; T &gt; &amp;values)']]]
 ];
