@@ -111,18 +111,10 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>VectorDistance</b> (
 float&#160;</td><td class="memItemRight" valign="bottom"><b>VectorDistance</b> (const <a class="el" href="structBirb_1_1Vector3int.html">Vector3int</a> &amp;a, const <a class="el" href="structBirb_1_1Vector3int.html">Vector3int</a> &amp;b)</td></tr>
 <tr class="memdesc:a14b088cc430f1224f06c9fcc933baf43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the distance between two 3D integer vectors. <br /></td></tr>
 <tr class="separator:a14b088cc430f1224f06c9fcc933baf43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee2fe653d3b01c8e2cdc11f2c3629926"><td class="memItemLeft" align="right" valign="top"><a id="aee2fe653d3b01c8e2cdc11f2c3629926" name="aee2fe653d3b01c8e2cdc11f2c3629926"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>Clamp</b> (const float &amp;value, const float &amp;min, const float &amp;max)</td></tr>
-<tr class="memdesc:aee2fe653d3b01c8e2cdc11f2c3629926"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clamp a float between the given values. <br /></td></tr>
-<tr class="separator:aee2fe653d3b01c8e2cdc11f2c3629926"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9aabd3d0b32e0d7bb6570cee80893cbe"><td class="memItemLeft" align="right" valign="top"><a id="a9aabd3d0b32e0d7bb6570cee80893cbe" name="a9aabd3d0b32e0d7bb6570cee80893cbe"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>Clamp</b> (const double &amp;value, const double &amp;min, const double &amp;max)</td></tr>
-<tr class="memdesc:a9aabd3d0b32e0d7bb6570cee80893cbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clamp a double between the given values. <br /></td></tr>
-<tr class="separator:a9aabd3d0b32e0d7bb6570cee80893cbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44b916eabb15f1d3b559957fa2cf627c"><td class="memItemLeft" align="right" valign="top"><a id="a44b916eabb15f1d3b559957fa2cf627c" name="a44b916eabb15f1d3b559957fa2cf627c"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>Clamp</b> (const int &amp;value, const int &amp;min, const int &amp;max)</td></tr>
-<tr class="memdesc:a44b916eabb15f1d3b559957fa2cf627c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clamp an integer between the given values. <br /></td></tr>
-<tr class="separator:a44b916eabb15f1d3b559957fa2cf627c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02602457b463413a38829ce679db58f6"><td class="memTemplParams" colspan="2"><a id="a02602457b463413a38829ce679db58f6" name="a02602457b463413a38829ce679db58f6"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a02602457b463413a38829ce679db58f6"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Clamp</b> (const T &amp;value, const T &amp;min, const T &amp;max)</td></tr>
+<tr class="separator:a02602457b463413a38829ce679db58f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a878e9c470199b4da4933d3333067ba87"><td class="memItemLeft" align="right" valign="top"><a id="a878e9c470199b4da4933d3333067ba87" name="a878e9c470199b4da4933d3333067ba87"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>Lerp</b> (const int &amp;a, const int &amp;b, const float &amp;t)</td></tr>
 <tr class="memdesc:a878e9c470199b4da4933d3333067ba87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interpolate a value between two values given time t. <br /></td></tr>
@@ -171,8 +163,13 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>CenterPoint</b> (con
 <a class="el" href="structBirb_1_1Vector3f.html">Vector3f</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CenterPoint</b> (const <a class="el" href="structBirb_1_1Vector3int.html">Vector3int</a> &amp;a, const <a class="el" href="structBirb_1_1Vector3int.html">Vector3int</a> &amp;b)</td></tr>
 <tr class="memdesc:a73a2a4f962a9f568df2f973e1e4a21e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the center point between two 3D integer vectors. <br /></td></tr>
 <tr class="separator:a73a2a4f962a9f568df2f973e1e4a21e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8204a0f588b06de8fe9bb0e68367447e"><td class="memItemLeft" align="right" valign="top"><a id="a8204a0f588b06de8fe9bb0e68367447e" name="a8204a0f588b06de8fe9bb0e68367447e"></a>
-<a class="el" href="structBirb_1_1Vector2int.html">Vector2int</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FindClosestPoint</b> (const <a class="el" href="structBirb_1_1Vector2int.html">Vector2int</a> &amp;point, <a class="el" href="structBirb_1_1Vector2int.html">Vector2int</a> points[], const int &amp;pointCount)</td></tr>
+<tr class="memitem:a48cfdad6152a324e76ad448a1d6dd643"><td class="memItemLeft" align="right" valign="top"><a id="a48cfdad6152a324e76ad448a1d6dd643" name="a48cfdad6152a324e76ad448a1d6dd643"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>PointOnLine</b> (const <a class="el" href="classBirb_1_1Line.html">Line</a> &amp;line, const <a class="el" href="structBirb_1_1Vector2f.html">Vector2f</a> &amp;point)</td></tr>
+<tr class="memdesc:a48cfdad6152a324e76ad448a1d6dd643"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the give point is on the line. <br /></td></tr>
+<tr class="separator:a48cfdad6152a324e76ad448a1d6dd643"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0483850c6b7a319cda12d9759b0c8ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structBirb_1_1Vector2f.html">Vector2f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceBirb_1_1Math.html#af0483850c6b7a319cda12d9759b0c8ea">FindPointOnCircle</a> (const <a class="el" href="classBirb_1_1Circle.html">Circle</a> &amp;circle, const float &amp;angle)</td></tr>
+<tr class="separator:af0483850c6b7a319cda12d9759b0c8ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8204a0f588b06de8fe9bb0e68367447e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structBirb_1_1Vector2int.html">Vector2int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceBirb_1_1Math.html#a8204a0f588b06de8fe9bb0e68367447e">FindClosestPoint</a> (const <a class="el" href="structBirb_1_1Vector2int.html">Vector2int</a> &amp;point, <a class="el" href="structBirb_1_1Vector2int.html">Vector2int</a> points[], const int &amp;pointCount)</td></tr>
 <tr class="separator:a8204a0f588b06de8fe9bb0e68367447e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e6bebedb533aa4c7714f4c74d1ff2e8"><td class="memItemLeft" align="right" valign="top"><a id="a8e6bebedb533aa4c7714f4c74d1ff2e8" name="a8e6bebedb533aa4c7714f4c74d1ff2e8"></a>
 <a class="el" href="structBirb_1_1Vector2int.html">Vector2int</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FindClosestPoint</b> (const <a class="el" href="structBirb_1_1Vector2int.html">Vector2int</a> &amp;point, const std::vector&lt; <a class="el" href="structBirb_1_1Vector2int.html">Vector2int</a> &gt; &amp;points)</td></tr>
@@ -222,7 +219,87 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>Normalize</b> (cons
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Misc math functions. </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="a8204a0f588b06de8fe9bb0e68367447e" name="a8204a0f588b06de8fe9bb0e68367447e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8204a0f588b06de8fe9bb0e68367447e">&#9670;&nbsp;</a></span>FindClosestPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structBirb_1_1Vector2int.html">Vector2int</a> Birb::Math::FindClosestPoint </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structBirb_1_1Vector2int.html">Vector2int</a> &amp;&#160;</td>
+          <td class="paramname"><em>point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structBirb_1_1Vector2int.html">Vector2int</a>&#160;</td>
+          <td class="paramname"><em>points</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>pointCount</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Find the closest point in an array to the given <a class="el" href="structBirb_1_1Vector2int.html" title="Point in 2D space with integer accuracy.">Vector2int</a> point </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">point</td><td>The current point </td></tr>
+    <tr><td class="paramname">points</td><td>List of points that we are comparing point to </td></tr>
+    <tr><td class="paramname">pointCount</td><td>Size of the points array </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Closest point in the array </dd></dl>
+
+</div>
+</div>
+<a id="af0483850c6b7a319cda12d9759b0c8ea" name="af0483850c6b7a319cda12d9759b0c8ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0483850c6b7a319cda12d9759b0c8ea">&#9670;&nbsp;</a></span>FindPointOnCircle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structBirb_1_1Vector2f.html">Vector2f</a> Birb::Math::FindPointOnCircle </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classBirb_1_1Circle.html">Circle</a> &amp;&#160;</td>
+          <td class="paramname"><em>circle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float &amp;&#160;</td>
+          <td class="paramname"><em>angle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">circle</td><td><a class="el" href="classBirb_1_1Circle.html">Circle</a> object </td></tr>
+    <tr><td class="paramname">angle</td><td>Angle in degrees </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A point on the circle rotated by the angle. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

@@ -1,7 +1,7 @@
 var searchData=
 [
   ['value_0',['value',['../structBirb_1_1EntityComponent_1_1ProgressBar.html#a8fd67be8051d9b37b68db80935d973bc',1,'Birb::EntityComponent::ProgressBar']]],
-  ['values_1',['values',['../structBirb_1_1Widgets_1_1Graph.html#a7a71b6fce1a938edf7ffa76713dbb0b7',1,'Birb::Widgets::Graph']]],
+  ['values_1',['values',['../classBirb_1_1Widgets_1_1Graph.html#a7a71b6fce1a938edf7ffa76713dbb0b7',1,'Birb::Widgets::Graph']]],
   ['vector2f_2',['Vector2f',['../structBirb_1_1Vector2f.html',1,'Birb']]],
   ['vector2int_3',['Vector2int',['../structBirb_1_1Vector2int.html',1,'Birb']]],
   ['vector3f_4',['Vector3f',['../structBirb_1_1Vector3f.html',1,'Birb']]],

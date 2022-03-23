@@ -195,7 +195,7 @@ function cloneBirb2D()
 make clean
 doxygen ./doxygen_config
 [ -d ../docs/birb2d_docs ] || mkdir ../docs/birb2d_docs
-mv ./doxygen/html/* ../doxygen/birb2d_docs/ && echo "Birb2D docs moved to ./docs/birb2d_docs"
+mv ./doxygen/html/* ../docs/birb2d_docs/ && echo "Birb2D docs moved to ./docs/birb2d_docs"
 
 case $1 in
 	-d)

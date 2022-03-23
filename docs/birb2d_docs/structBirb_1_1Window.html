@@ -120,7 +120,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Cleanup</b> ()</td></
 <tr class="memdesc:a4714f32bd92ddb929f237c25eb3fbc1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current cursor position relative to the window. <br /></td></tr>
 <tr class="separator:a4714f32bd92ddb929f237c25eb3fbc1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e9123c88ebd7b8b7d402791dd83dd33"><td class="memItemLeft" align="right" valign="top"><a id="a7e9123c88ebd7b8b7d402791dd83dd33" name="a7e9123c88ebd7b8b7d402791dd83dd33"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>CursorInRect</b> (const <a class="el" href="structBirb_1_1Rect.html">Rect</a> &amp;rect)</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>CursorInRect</b> (const <a class="el" href="classBirb_1_1Rect.html">Rect</a> &amp;rect)</td></tr>
 <tr class="memdesc:a7e9123c88ebd7b8b7d402791dd83dd33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the cursor is inside of the given rect dimensions. <br /></td></tr>
 <tr class="separator:a7e9123c88ebd7b8b7d402791dd83dd33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae376e6e75490b829b8ee6b4fdaeeb480"><td class="memItemLeft" align="right" valign="top"><a id="ae376e6e75490b829b8ee6b4fdaeeb480" name="ae376e6e75490b829b8ee6b4fdaeeb480"></a>
@@ -133,6 +133,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>EventTick</b> (const 
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>PollEvents</b> ()</td></tr>
 <tr class="memdesc:a82185986266edc7aec8b7cad14225990"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs SDL_PollEvent and saves the result to the <em>event</em> variable. <br /></td></tr>
 <tr class="separator:a82185986266edc7aec8b7cad14225990"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a895cf53dbaf9e2c62b3dad655cbd531b"><td class="memItemLeft" align="right" valign="top"><a id="a895cf53dbaf9e2c62b3dad655cbd531b" name="a895cf53dbaf9e2c62b3dad655cbd531b"></a>
+<a class="el" href="structBirb_1_1Vector2f.html">Vector2f</a>&#160;</td><td class="memItemRight" valign="bottom"><b>window_dimensions_multiplier</b> ()</td></tr>
+<tr class="memdesc:a895cf53dbaf9e2c62b3dad655cbd531b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the difference between the current and original window dimensions. <br /></td></tr>
+<tr class="separator:a895cf53dbaf9e2c62b3dad655cbd531b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -176,10 +180,6 @@ SDL_Renderer *&#160;</td><td class="memItemRight" valign="bottom"><b>renderer</b
 <a class="el" href="structBirb_1_1Vector2int.html">Vector2int</a>&#160;</td><td class="memItemRight" valign="bottom"><b>original_window_dimensions</b></td></tr>
 <tr class="memdesc:ad55a282855aba062cc5bce10e0335933"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structBirb_1_1Window.html">Window</a> dimensions on application startup before its modified by the user. <br /></td></tr>
 <tr class="separator:ad55a282855aba062cc5bce10e0335933"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a391ba3d65bbdc7cc5fca2a4fb661c626"><td class="memItemLeft" align="right" valign="top"><a id="a391ba3d65bbdc7cc5fca2a4fb661c626" name="a391ba3d65bbdc7cc5fca2a4fb661c626"></a>
-<a class="el" href="structBirb_1_1Vector2f.html">Vector2f</a>&#160;</td><td class="memItemRight" valign="bottom"><b>window_dimensions_multiplier</b></td></tr>
-<tr class="memdesc:a391ba3d65bbdc7cc5fca2a4fb661c626"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains the difference between the current and old window dimensions. DO NOT MODIFY! <br /></td></tr>
-<tr class="separator:a391ba3d65bbdc7cc5fca2a4fb661c626"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>include/<a class="el" href="Renderwindow_8hpp_source.html">Renderwindow.hpp</a></li>

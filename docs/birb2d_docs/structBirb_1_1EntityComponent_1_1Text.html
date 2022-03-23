@@ -92,19 +92,22 @@ $(document).ready(function(){initNavTree('structBirb_1_1EntityComponent_1_1Text.
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="structBirb_1_1EntityComponent_1_1Text.html" title="Text contains details needed to generate a sprite for the Entity in case the Entity is used to displa...">Text</a> contains details needed to generate a sprite for the <a class="el" href="structBirb_1_1Entity.html" title="Entities are objects that contain all of the information required to render stuff.">Entity</a> in case the <a class="el" href="structBirb_1_1Entity.html" title="Entities are objects that contain all of the information required to render stuff.">Entity</a> is used to display text.  
+<p><a class="el" href="structBirb_1_1EntityComponent_1_1Text.html" title="Text contains details needed to generate a sprite for the Entity in case the Entity is used to displa...">Text</a> contains details needed to generate a sprite for the <a class="el" href="classBirb_1_1Entity.html" title="Entities are objects that contain all of the information required to render stuff.">Entity</a> in case the <a class="el" href="classBirb_1_1Entity.html" title="Entities are objects that contain all of the information required to render stuff.">Entity</a> is used to display text.  
  <a href="structBirb_1_1EntityComponent_1_1Text.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="Entity_8hpp_source.html">Entity.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2da52d012d37f966d26084adf995cf77"><td class="memItemLeft" align="right" valign="top"><a id="a2da52d012d37f966d26084adf995cf77" name="a2da52d012d37f966d26084adf995cf77"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Text</b> (const std::string &amp;p_text, TTF_Font *font, SDL_Color *p_color)</td></tr>
-<tr class="separator:a2da52d012d37f966d26084adf995cf77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbfd39c8d078000921312c8ceb238ce2"><td class="memItemLeft" align="right" valign="top"><a id="adbfd39c8d078000921312c8ceb238ce2" name="adbfd39c8d078000921312c8ceb238ce2"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Text</b> (const std::string &amp;p_text, TTF_Font *font, SDL_Color *p_color, SDL_Color *p_bgColor)</td></tr>
-<tr class="separator:adbfd39c8d078000921312c8ceb238ce2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c3a53581b8bf789e02b5a417a7396ac"><td class="memItemLeft" align="right" valign="top"><a id="a5c3a53581b8bf789e02b5a417a7396ac" name="a5c3a53581b8bf789e02b5a417a7396ac"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Text</b> (const std::string &amp;p_text, TTF_Font *font, <a class="el" href="structBirb_1_1Color.html">Color</a> *p_color)</td></tr>
+<tr class="separator:a5c3a53581b8bf789e02b5a417a7396ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54cc72b8bbeaf9c619ec262dd2d4ba4e"><td class="memItemLeft" align="right" valign="top"><a id="a54cc72b8bbeaf9c619ec262dd2d4ba4e" name="a54cc72b8bbeaf9c619ec262dd2d4ba4e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Text</b> (const std::string &amp;p_text, TTF_Font *font, <a class="el" href="structBirb_1_1Color.html">Color</a> *p_color, <a class="el" href="structBirb_1_1Color.html">Color</a> *p_bgColor)</td></tr>
+<tr class="separator:a54cc72b8bbeaf9c619ec262dd2d4ba4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18d6a2889c0d1f54273d3678f57fc54c"><td class="memItemLeft" align="right" valign="top"><a id="a18d6a2889c0d1f54273d3678f57fc54c" name="a18d6a2889c0d1f54273d3678f57fc54c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="structBirb_1_1EntityComponent_1_1Text.html">Text</a> &amp;other) const</td></tr>
+<tr class="separator:a18d6a2889c0d1f54273d3678f57fc54c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -114,17 +117,17 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>text</b></td><
 <tr class="memitem:a3c6cc2b6e72e1f1ada0e5e632e2df273"><td class="memItemLeft" align="right" valign="top"><a id="a3c6cc2b6e72e1f1ada0e5e632e2df273" name="a3c6cc2b6e72e1f1ada0e5e632e2df273"></a>
 TTF_Font *&#160;</td><td class="memItemRight" valign="bottom"><b>font</b></td></tr>
 <tr class="separator:a3c6cc2b6e72e1f1ada0e5e632e2df273"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabf8484a630bec276f931ee2260d54a8"><td class="memItemLeft" align="right" valign="top"><a id="aabf8484a630bec276f931ee2260d54a8" name="aabf8484a630bec276f931ee2260d54a8"></a>
-SDL_Color *&#160;</td><td class="memItemRight" valign="bottom"><b>color</b></td></tr>
-<tr class="memdesc:aabf8484a630bec276f931ee2260d54a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Surface color of the text. <br /></td></tr>
-<tr class="separator:aabf8484a630bec276f931ee2260d54a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88fa16965fe1eda70487a52977ec7098"><td class="memItemLeft" align="right" valign="top"><a id="a88fa16965fe1eda70487a52977ec7098" name="a88fa16965fe1eda70487a52977ec7098"></a>
-SDL_Color *&#160;</td><td class="memItemRight" valign="bottom"><b>bgColor</b></td></tr>
-<tr class="memdesc:a88fa16965fe1eda70487a52977ec7098"><td class="mdescLeft">&#160;</td><td class="mdescRight">Background color for the text component. <br /></td></tr>
-<tr class="separator:a88fa16965fe1eda70487a52977ec7098"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31fd623c980931717a05f9b5fd3846ba"><td class="memItemLeft" align="right" valign="top"><a id="a31fd623c980931717a05f9b5fd3846ba" name="a31fd623c980931717a05f9b5fd3846ba"></a>
+<a class="el" href="structBirb_1_1Color.html">Color</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>color</b></td></tr>
+<tr class="memdesc:a31fd623c980931717a05f9b5fd3846ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Surface color of the text. <br /></td></tr>
+<tr class="separator:a31fd623c980931717a05f9b5fd3846ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecfaaacf7304afa86f64e4fb042a3ae2"><td class="memItemLeft" align="right" valign="top"><a id="aecfaaacf7304afa86f64e4fb042a3ae2" name="aecfaaacf7304afa86f64e4fb042a3ae2"></a>
+<a class="el" href="structBirb_1_1Color.html">Color</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>bgColor</b></td></tr>
+<tr class="memdesc:aecfaaacf7304afa86f64e4fb042a3ae2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Background color for the text component. <br /></td></tr>
+<tr class="separator:aecfaaacf7304afa86f64e4fb042a3ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p ><a class="el" href="structBirb_1_1EntityComponent_1_1Text.html" title="Text contains details needed to generate a sprite for the Entity in case the Entity is used to displa...">Text</a> contains details needed to generate a sprite for the <a class="el" href="structBirb_1_1Entity.html" title="Entities are objects that contain all of the information required to render stuff.">Entity</a> in case the <a class="el" href="structBirb_1_1Entity.html" title="Entities are objects that contain all of the information required to render stuff.">Entity</a> is used to display text. </p>
+<div class="textblock"><p ><a class="el" href="structBirb_1_1EntityComponent_1_1Text.html" title="Text contains details needed to generate a sprite for the Entity in case the Entity is used to displa...">Text</a> contains details needed to generate a sprite for the <a class="el" href="classBirb_1_1Entity.html" title="Entities are objects that contain all of the information required to render stuff.">Entity</a> in case the <a class="el" href="classBirb_1_1Entity.html" title="Entities are objects that contain all of the information required to render stuff.">Entity</a> is used to display text. </p>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>include/<a class="el" href="Entity_8hpp_source.html">Entity.hpp</a></li>
 </ul>

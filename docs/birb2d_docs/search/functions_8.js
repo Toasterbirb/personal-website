@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['pollbuttons_0',['PollButtons',['../classBirb_1_1UI.html#a544dd398f2d18d0b2ae133fd4c585938',1,'Birb::UI']]],
-  ['pollevents_1',['PollEvents',['../structBirb_1_1Window.html#a82185986266edc7aec8b7cad14225990',1,'Birb::Window']]]
+  ['optimize_0',['Optimize',['../classBirb_1_1Polygon.html#ae04faac7a0e1da9c37534a6b18d25bde',1,'Birb::Polygon']]]
 ];
