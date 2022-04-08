@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['progressbarcomponent_0',['progressBarComponent',['../classBirb_1_1Entity.html#a743b0618ebe31f7a7969674d94d120f8',1,'Birb::Entity']]]
+  ['original_5fwindow_5fdimensions_0',['original_window_dimensions',['../classBirb_1_1Window.html#ad55a282855aba062cc5bce10e0335933',1,'Birb::Window']]]
 ];

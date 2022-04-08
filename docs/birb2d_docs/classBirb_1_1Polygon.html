@@ -124,6 +124,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>AddPoints</b> (const 
 <tr class="memitem:aad92554cbf6b83a1136e716c24161f83"><td class="memItemLeft" align="right" valign="top"><a id="aad92554cbf6b83a1136e716c24161f83" name="aad92554cbf6b83a1136e716c24161f83"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>AddPoints</b> (const std::vector&lt; <a class="el" href="structBirb_1_1Vector2f.html">Vector2f</a> &gt; &amp;points)</td></tr>
 <tr class="separator:aad92554cbf6b83a1136e716c24161f83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac5de7a4fa446e85a959bc439cf8115d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structBirb_1_1Vector2f.html">Vector2f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBirb_1_1Polygon.html#aac5de7a4fa446e85a959bc439cf8115d">CenterPoint</a> () const</td></tr>
+<tr class="separator:aac5de7a4fa446e85a959bc439cf8115d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae04faac7a0e1da9c37534a6b18d25bde"><td class="memItemLeft" align="right" valign="top"><a id="ae04faac7a0e1da9c37534a6b18d25bde" name="ae04faac7a0e1da9c37534a6b18d25bde"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Optimize</b> ()</td></tr>
 <tr class="memdesc:ae04faac7a0e1da9c37534a6b18d25bde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes points that don't change the visual appearance of the polygon. <br /></td></tr>
@@ -135,9 +137,15 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> () const</td>
 <tr class="memitem:ac22ca4427dbc08267815591488cd69ee inherit pub_methods_classBirb_1_1SceneObject"><td class="memItemLeft" align="right" valign="top"><a id="ac22ca4427dbc08267815591488cd69ee" name="ac22ca4427dbc08267815591488cd69ee"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SceneObject</b> (const int &amp;priority)</td></tr>
 <tr class="separator:ac22ca4427dbc08267815591488cd69ee inherit pub_methods_classBirb_1_1SceneObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e1749a6b9877e9d0c63252eb5c7200b inherit pub_methods_classBirb_1_1SceneObject"><td class="memItemLeft" align="right" valign="top"><a id="a6e1749a6b9877e9d0c63252eb5c7200b" name="a6e1749a6b9877e9d0c63252eb5c7200b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SceneObject</b> (const int &amp;priority, const bool &amp;active)</td></tr>
+<tr class="separator:a6e1749a6b9877e9d0c63252eb5c7200b inherit pub_methods_classBirb_1_1SceneObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97d67bbd790d18518ed5ec5e6ec2a042 inherit pub_methods_classBirb_1_1SceneObject"><td class="memItemLeft" align="right" valign="top"><a id="a97d67bbd790d18518ed5ec5e6ec2a042" name="a97d67bbd790d18518ed5ec5e6ec2a042"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>RenderFunc</b> ()=0</td></tr>
 <tr class="separator:a97d67bbd790d18518ed5ec5e6ec2a042 inherit pub_methods_classBirb_1_1SceneObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bb010109a98e8279ebff5b753f3eb30 inherit pub_methods_classBirb_1_1SceneObject"><td class="memItemLeft" align="right" valign="top"><a id="a3bb010109a98e8279ebff5b753f3eb30" name="a3bb010109a98e8279ebff5b753f3eb30"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPos</b> (const <a class="el" href="structBirb_1_1Vector2f.html">Vector2f</a> &amp;delta)=0</td></tr>
+<tr class="separator:a3bb010109a98e8279ebff5b753f3eb30 inherit pub_methods_classBirb_1_1SceneObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -151,7 +159,32 @@ std::vector&lt; <a class="el" href="structBirb_1_1Vector2f.html">Vector2f</a> &g
 <tr class="memitem:a661879754ee110058b0f521f2262e896 inherit pub_attribs_classBirb_1_1SceneObject"><td class="memItemLeft" align="right" valign="top"><a id="a661879754ee110058b0f521f2262e896" name="a661879754ee110058b0f521f2262e896"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>renderingPriority</b></td></tr>
 <tr class="separator:a661879754ee110058b0f521f2262e896 inherit pub_attribs_classBirb_1_1SceneObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24b235a7207041ecb432bf6783cddd7e inherit pub_attribs_classBirb_1_1SceneObject"><td class="memItemLeft" align="right" valign="top"><a id="a24b235a7207041ecb432bf6783cddd7e" name="a24b235a7207041ecb432bf6783cddd7e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>sceneActive</b></td></tr>
+<tr class="separator:a24b235a7207041ecb432bf6783cddd7e inherit pub_attribs_classBirb_1_1SceneObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3cf63a1c8d6abc359e5b8e6220dd8a4 inherit pub_attribs_classBirb_1_1SceneObject"><td class="memItemLeft" align="right" valign="top"><a id="ae3cf63a1c8d6abc359e5b8e6220dd8a4" name="ae3cf63a1c8d6abc359e5b8e6220dd8a4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>active</b></td></tr>
+<tr class="separator:ae3cf63a1c8d6abc359e5b8e6220dd8a4 inherit pub_attribs_classBirb_1_1SceneObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aac5de7a4fa446e85a959bc439cf8115d" name="aac5de7a4fa446e85a959bc439cf8115d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac5de7a4fa446e85a959bc439cf8115d">&#9670;&nbsp;</a></span>CenterPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structBirb_1_1Vector2f.html">Vector2f</a> Birb::Polygon::CenterPoint </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Gets the "center point" of the polygon by taking the average of all points </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>include/<a class="el" href="Polygon_8hpp_source.html">Polygon.hpp</a></li>
 </ul>

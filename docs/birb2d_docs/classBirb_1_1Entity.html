@@ -110,8 +110,12 @@ Inheritance diagram for Birb::Entity:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a68531115a7f5b4b2c24e8ba66f6cb907"><td class="memItemLeft" align="right" valign="top"><a id="a68531115a7f5b4b2c24e8ba66f6cb907" name="a68531115a7f5b4b2c24e8ba66f6cb907"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Entity</b> (const std::string &amp;p_name)</td></tr>
-<tr class="memdesc:a68531115a7f5b4b2c24e8ba66f6cb907"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates empty <a class="el" href="classBirb_1_1Entity.html" title="Entities are objects that contain all of the information required to render stuff.">Entity</a> object. <br /></td></tr>
+<tr class="memdesc:a68531115a7f5b4b2c24e8ba66f6cb907"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an empty <a class="el" href="classBirb_1_1Entity.html" title="Entities are objects that contain all of the information required to render stuff.">Entity</a> object. <br /></td></tr>
 <tr class="separator:a68531115a7f5b4b2c24e8ba66f6cb907"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac49f9a6da6a91e20576d015be30b2338"><td class="memItemLeft" align="right" valign="top"><a id="ac49f9a6da6a91e20576d015be30b2338" name="ac49f9a6da6a91e20576d015be30b2338"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Entity</b> (const std::string &amp;p_name, const <a class="el" href="classBirb_1_1Rect.html">Rect</a> &amp;<a class="el" href="classBirb_1_1Entity.html#aa5ffa3831200c7764c5f35f9ad01fc25">rect</a>)</td></tr>
+<tr class="memdesc:ac49f9a6da6a91e20576d015be30b2338"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an empty <a class="el" href="classBirb_1_1Entity.html" title="Entities are objects that contain all of the information required to render stuff.">Entity</a> object with size and position. <br /></td></tr>
+<tr class="separator:ac49f9a6da6a91e20576d015be30b2338"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11607b6cd04149b473bb8ca06f06a05c"><td class="memItemLeft" align="right" valign="top"><a id="a11607b6cd04149b473bb8ca06f06a05c" name="a11607b6cd04149b473bb8ca06f06a05c"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Entity</b> (const std::string &amp;p_name, const <a class="el" href="classBirb_1_1Rect.html">Rect</a> &amp;p_rect, SDL_Texture *p_texture)</td></tr>
 <tr class="memdesc:a11607b6cd04149b473bb8ca06f06a05c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an <a class="el" href="classBirb_1_1Entity.html" title="Entities are objects that contain all of the information required to render stuff.">Entity</a> with a SDL_Texture to render with custom scale. <br /></td></tr>
@@ -132,10 +136,10 @@ Public Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetText</b> (const std::string &amp;newText)</td></tr>
 <tr class="memdesc:a2def15d3e14c298479761bdcee3c611d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the text in Text and reload the sprite. <br /></td></tr>
 <tr class="separator:a2def15d3e14c298479761bdcee3c611d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a002bfb3de02e27912fdc5710a3943103"><td class="memItemLeft" align="right" valign="top"><a id="a002bfb3de02e27912fdc5710a3943103" name="a002bfb3de02e27912fdc5710a3943103"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFont</b> (TTF_Font *font)</td></tr>
-<tr class="memdesc:a002bfb3de02e27912fdc5710a3943103"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the font in Text and reload the sprite. <br /></td></tr>
-<tr class="separator:a002bfb3de02e27912fdc5710a3943103"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54dc6d40c1c6c11bf19e1d374830c042"><td class="memItemLeft" align="right" valign="top"><a id="a54dc6d40c1c6c11bf19e1d374830c042" name="a54dc6d40c1c6c11bf19e1d374830c042"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFont</b> (const <a class="el" href="classBirb_1_1Font.html">Font</a> &amp;font)</td></tr>
+<tr class="memdesc:a54dc6d40c1c6c11bf19e1d374830c042"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the font in Text and reload the sprite. <br /></td></tr>
+<tr class="separator:a54dc6d40c1c6c11bf19e1d374830c042"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afadef157f4513321a874bea02a6baf9a"><td class="memItemLeft" align="right" valign="top"><a id="afadef157f4513321a874bea02a6baf9a" name="afadef157f4513321a874bea02a6baf9a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetColor</b> (<a class="el" href="structBirb_1_1Color.html">Color</a> *color)</td></tr>
 <tr class="memdesc:afadef157f4513321a874bea02a6baf9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the color in Text and reload the sprite. <br /></td></tr>
@@ -152,6 +156,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ReloadSprite</b> ()</
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetBaseEntityValues</b> ()</td></tr>
 <tr class="memdesc:a506422d54e8c0cf57609037ad1811d30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to set some default value when they aren't provided during <a class="el" href="classBirb_1_1Entity.html" title="Entities are objects that contain all of the information required to render stuff.">Entity</a> initialization. <br /></td></tr>
 <tr class="separator:a506422d54e8c0cf57609037ad1811d30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe53fa1b58fd34f256651261cd30df47"><td class="memItemLeft" align="right" valign="top"><a id="abe53fa1b58fd34f256651261cd30df47" name="abe53fa1b58fd34f256651261cd30df47"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CenterRelativeTo</b> (const <a class="el" href="classBirb_1_1Rect.html">Rect</a> &amp;<a class="el" href="classBirb_1_1Entity.html#aa5ffa3831200c7764c5f35f9ad01fc25">rect</a>)</td></tr>
+<tr class="separator:abe53fa1b58fd34f256651261cd30df47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a654f37f1d1706fc74e75daf2ce1af183"><td class="memItemLeft" align="right" valign="top"><a id="a654f37f1d1706fc74e75daf2ce1af183" name="a654f37f1d1706fc74e75daf2ce1af183"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>isHovering</b> ()</td></tr>
 <tr class="memdesc:a654f37f1d1706fc74e75daf2ce1af183"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the cursor is hovering over this entity. <br /></td></tr>
@@ -167,9 +174,15 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const
 <tr class="memitem:ac22ca4427dbc08267815591488cd69ee inherit pub_methods_classBirb_1_1SceneObject"><td class="memItemLeft" align="right" valign="top"><a id="ac22ca4427dbc08267815591488cd69ee" name="ac22ca4427dbc08267815591488cd69ee"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SceneObject</b> (const int &amp;priority)</td></tr>
 <tr class="separator:ac22ca4427dbc08267815591488cd69ee inherit pub_methods_classBirb_1_1SceneObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e1749a6b9877e9d0c63252eb5c7200b inherit pub_methods_classBirb_1_1SceneObject"><td class="memItemLeft" align="right" valign="top"><a id="a6e1749a6b9877e9d0c63252eb5c7200b" name="a6e1749a6b9877e9d0c63252eb5c7200b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SceneObject</b> (const int &amp;priority, const bool &amp;active)</td></tr>
+<tr class="separator:a6e1749a6b9877e9d0c63252eb5c7200b inherit pub_methods_classBirb_1_1SceneObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97d67bbd790d18518ed5ec5e6ec2a042 inherit pub_methods_classBirb_1_1SceneObject"><td class="memItemLeft" align="right" valign="top"><a id="a97d67bbd790d18518ed5ec5e6ec2a042" name="a97d67bbd790d18518ed5ec5e6ec2a042"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>RenderFunc</b> ()=0</td></tr>
 <tr class="separator:a97d67bbd790d18518ed5ec5e6ec2a042 inherit pub_methods_classBirb_1_1SceneObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bb010109a98e8279ebff5b753f3eb30 inherit pub_methods_classBirb_1_1SceneObject"><td class="memItemLeft" align="right" valign="top"><a id="a3bb010109a98e8279ebff5b753f3eb30" name="a3bb010109a98e8279ebff5b753f3eb30"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPos</b> (const <a class="el" href="structBirb_1_1Vector2f.html">Vector2f</a> &amp;delta)=0</td></tr>
+<tr class="separator:a3bb010109a98e8279ebff5b753f3eb30 inherit pub_methods_classBirb_1_1SceneObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -181,10 +194,6 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>name</b></td><
 SDL_Texture *&#160;</td><td class="memItemRight" valign="bottom"><b>sprite</b></td></tr>
 <tr class="memdesc:a1dc94a2a24176a724460cdcb4f2bf33c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprite to be rendered. <br /></td></tr>
 <tr class="separator:a1dc94a2a24176a724460cdcb4f2bf33c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a466b79ea7d4b41fe7699ce71c0167223"><td class="memItemLeft" align="right" valign="top"><a id="a466b79ea7d4b41fe7699ce71c0167223" name="a466b79ea7d4b41fe7699ce71c0167223"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>active</b></td></tr>
-<tr class="memdesc:a466b79ea7d4b41fe7699ce71c0167223"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inactive entities will be skipped during rendering. <br /></td></tr>
-<tr class="separator:a466b79ea7d4b41fe7699ce71c0167223"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea8bf795a4c1f3642af91ea93c078d5f"><td class="memItemLeft" align="right" valign="top"><a id="aea8bf795a4c1f3642af91ea93c078d5f" name="aea8bf795a4c1f3642af91ea93c078d5f"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>angle</b></td></tr>
 <tr class="memdesc:aea8bf795a4c1f3642af91ea93c078d5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the rotation of the entity when rendering it. <br /></td></tr>
@@ -202,7 +211,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>angle</b></td></tr>
 <tr class="memdesc:a2acdea97b21a0ab254092692f180d310"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables the rendering of Text. <br /></td></tr>
 <tr class="separator:a2acdea97b21a0ab254092692f180d310"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ba571966f001e6b6661208946d9c243"><td class="memItemLeft" align="right" valign="top"><a id="a7ba571966f001e6b6661208946d9c243" name="a7ba571966f001e6b6661208946d9c243"></a>
-<a class="el" href="structBirb_1_1EntityComponent_1_1Click.html">EntityComponent::Click</a>&#160;</td><td class="memItemRight" valign="bottom"><b>clickComponent</b></td></tr>
+<a class="el" href="classBirb_1_1EntityComponent_1_1Click.html">EntityComponent::Click</a>&#160;</td><td class="memItemRight" valign="bottom"><b>clickComponent</b></td></tr>
 <tr class="memdesc:a7ba571966f001e6b6661208946d9c243"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables button-like functionality. <br /></td></tr>
 <tr class="separator:a7ba571966f001e6b6661208946d9c243"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a665f5f8a54d7aaa2165b872f09d0a28e"><td class="memItemLeft" align="right" valign="top"><a id="a665f5f8a54d7aaa2165b872f09d0a28e" name="a665f5f8a54d7aaa2165b872f09d0a28e"></a>
@@ -217,6 +226,12 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>angle</b></td></tr>
 <tr class="memitem:a661879754ee110058b0f521f2262e896 inherit pub_attribs_classBirb_1_1SceneObject"><td class="memItemLeft" align="right" valign="top"><a id="a661879754ee110058b0f521f2262e896" name="a661879754ee110058b0f521f2262e896"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>renderingPriority</b></td></tr>
 <tr class="separator:a661879754ee110058b0f521f2262e896 inherit pub_attribs_classBirb_1_1SceneObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24b235a7207041ecb432bf6783cddd7e inherit pub_attribs_classBirb_1_1SceneObject"><td class="memItemLeft" align="right" valign="top"><a id="a24b235a7207041ecb432bf6783cddd7e" name="a24b235a7207041ecb432bf6783cddd7e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>sceneActive</b></td></tr>
+<tr class="separator:a24b235a7207041ecb432bf6783cddd7e inherit pub_attribs_classBirb_1_1SceneObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3cf63a1c8d6abc359e5b8e6220dd8a4 inherit pub_attribs_classBirb_1_1SceneObject"><td class="memItemLeft" align="right" valign="top"><a id="ae3cf63a1c8d6abc359e5b8e6220dd8a4" name="ae3cf63a1c8d6abc359e5b8e6220dd8a4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>active</b></td></tr>
+<tr class="separator:ae3cf63a1c8d6abc359e5b8e6220dd8a4 inherit pub_attribs_classBirb_1_1SceneObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Entities are objects that contain all of the information required to render stuff. </p>

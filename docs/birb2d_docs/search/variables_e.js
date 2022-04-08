@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['walloffset_0',['wallOffset',['../classBirb_1_1Widgets_1_1Graph.html#aeff42bd0f3cdc24824283c652dac2d3a',1,'Birb::Widgets::Graph']]],
-  ['win_5ftitle_1',['win_title',['../structBirb_1_1Window.html#a80953494f408ce4191e61d85e1957868',1,'Birb::Window']]],
-  ['window_5fdimensions_2',['window_dimensions',['../structBirb_1_1Window.html#a4f31ed6d9669c631374ef62aaebb57ae',1,'Birb::Window']]]
+  ['value_0',['value',['../structBirb_1_1EntityComponent_1_1ProgressBar.html#a8fd67be8051d9b37b68db80935d973bc',1,'Birb::EntityComponent::ProgressBar']]],
+  ['values_1',['values',['../classBirb_1_1Widgets_1_1Graph.html#a7a71b6fce1a938edf7ffa76713dbb0b7',1,'Birb::Widgets::Graph']]]
 ];

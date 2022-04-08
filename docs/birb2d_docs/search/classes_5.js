@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['line_0',['Line',['../classBirb_1_1Line.html',1,'Birb']]]
+  ['graph_0',['Graph',['../classBirb_1_1Widgets_1_1Graph.html',1,'Birb::Widgets']]]
 ];

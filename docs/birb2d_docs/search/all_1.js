@@ -7,5 +7,6 @@ var searchData=
   ['bordersize_4',['borderSize',['../classBirb_1_1Widgets_1_1Graph.html#afedf118b89bb97831779c5a9d57518d9',1,'Birb::Widgets::Graph']]],
   ['borderwidth_5',['borderWidth',['../structBirb_1_1EntityComponent_1_1ProgressBar.html#a95341fb03acc71bf89534c1095264167',1,'Birb::EntityComponent::ProgressBar']]],
   ['math_6',['Math',['../namespaceBirb_1_1Math.html',1,'Birb']]],
-  ['render_7',['Render',['../namespaceBirb_1_1Render.html',1,'Birb']]]
+  ['physics_7',['Physics',['../namespaceBirb_1_1Physics.html',1,'Birb']]],
+  ['render_8',['Render',['../namespaceBirb_1_1Render.html',1,'Birb']]]
 ];

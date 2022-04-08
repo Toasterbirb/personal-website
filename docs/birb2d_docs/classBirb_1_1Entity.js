@@ -1,6 +1,7 @@
 var classBirb_1_1Entity =
 [
     [ "Entity", "classBirb_1_1Entity.html#a68531115a7f5b4b2c24e8ba66f6cb907", null ],
+    [ "Entity", "classBirb_1_1Entity.html#ac49f9a6da6a91e20576d015be30b2338", null ],
     [ "Entity", "classBirb_1_1Entity.html#a11607b6cd04149b473bb8ca06f06a05c", null ],
     [ "Entity", "classBirb_1_1Entity.html#a0d58e0590c0ba3dcfa96399ca0ed20e0", null ],
     [ "Entity", "classBirb_1_1Entity.html#aba916c13ee851e674c076de95a4c2df9", null ],
@@ -11,9 +12,8 @@ var classBirb_1_1Entity =
     [ "ReloadSprite", "classBirb_1_1Entity.html#ae77a4fb732f3f332d49d0cfb87eb4966", null ],
     [ "SetBaseEntityValues", "classBirb_1_1Entity.html#a506422d54e8c0cf57609037ad1811d30", null ],
     [ "SetColor", "classBirb_1_1Entity.html#afadef157f4513321a874bea02a6baf9a", null ],
-    [ "SetFont", "classBirb_1_1Entity.html#a002bfb3de02e27912fdc5710a3943103", null ],
+    [ "SetFont", "classBirb_1_1Entity.html#a54dc6d40c1c6c11bf19e1d374830c042", null ],
     [ "SetText", "classBirb_1_1Entity.html#a2def15d3e14c298479761bdcee3c611d", null ],
-    [ "active", "classBirb_1_1Entity.html#a466b79ea7d4b41fe7699ce71c0167223", null ],
     [ "angle", "classBirb_1_1Entity.html#aea8bf795a4c1f3642af91ea93c078d5f", null ],
     [ "animationComponent", "classBirb_1_1Entity.html#a665f5f8a54d7aaa2165b872f09d0a28e", null ],
     [ "clickComponent", "classBirb_1_1Entity.html#a7ba571966f001e6b6661208946d9c243", null ],

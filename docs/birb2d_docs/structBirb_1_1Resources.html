@@ -101,15 +101,12 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ae4c2bf7bae103c566edfe5da677ff3f2"><td class="memItemLeft" align="right" valign="top"><a id="ae4c2bf7bae103c566edfe5da677ff3f2" name="ae4c2bf7bae103c566edfe5da677ff3f2"></a>
 static SDL_Texture *&#160;</td><td class="memItemRight" valign="bottom"><b>LoadTexture</b> (const std::string &amp;p_filePath)</td></tr>
 <tr class="separator:ae4c2bf7bae103c566edfe5da677ff3f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41ef0397786e24d335e345a912c2c0ba"><td class="memItemLeft" align="right" valign="top"><a id="a41ef0397786e24d335e345a912c2c0ba" name="a41ef0397786e24d335e345a912c2c0ba"></a>
-static SDL_Texture *&#160;</td><td class="memItemRight" valign="bottom"><b>TextSprite</b> (const std::string &amp;text, TTF_Font *font, const <a class="el" href="structBirb_1_1Color.html">Color</a> &amp;color)</td></tr>
-<tr class="separator:a41ef0397786e24d335e345a912c2c0ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1678e26536172801495143886025163"><td class="memItemLeft" align="right" valign="top"><a id="ae1678e26536172801495143886025163" name="ae1678e26536172801495143886025163"></a>
-static SDL_Texture *&#160;</td><td class="memItemRight" valign="bottom"><b>TextSprite</b> (const std::string &amp;text, TTF_Font *font, const <a class="el" href="structBirb_1_1Color.html">Color</a> &amp;color, const <a class="el" href="structBirb_1_1Color.html">Color</a> &amp;bgColor)</td></tr>
-<tr class="separator:ae1678e26536172801495143886025163"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a973ae31aa64ce4713bcdfd8a40c83caf"><td class="memItemLeft" align="right" valign="top"><a id="a973ae31aa64ce4713bcdfd8a40c83caf" name="a973ae31aa64ce4713bcdfd8a40c83caf"></a>
-static TTF_Font *&#160;</td><td class="memItemRight" valign="bottom"><b>LoadFont</b> (const std::string &amp;p_filePath, const int &amp;p_fontSize)</td></tr>
-<tr class="separator:a973ae31aa64ce4713bcdfd8a40c83caf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa81ffdf1834af37da73040a903f9e61e"><td class="memItemLeft" align="right" valign="top"><a id="aa81ffdf1834af37da73040a903f9e61e" name="aa81ffdf1834af37da73040a903f9e61e"></a>
+static SDL_Texture *&#160;</td><td class="memItemRight" valign="bottom"><b>TextSprite</b> (const std::string &amp;text, const <a class="el" href="classBirb_1_1Font.html">Font</a> &amp;font, const <a class="el" href="structBirb_1_1Color.html">Color</a> &amp;color, int wrapLength=0)</td></tr>
+<tr class="separator:aa81ffdf1834af37da73040a903f9e61e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2749beaad798fcb2beee35c4b153d90e"><td class="memItemLeft" align="right" valign="top"><a id="a2749beaad798fcb2beee35c4b153d90e" name="a2749beaad798fcb2beee35c4b153d90e"></a>
+static SDL_Texture *&#160;</td><td class="memItemRight" valign="bottom"><b>TextSprite</b> (const std::string &amp;text, const <a class="el" href="classBirb_1_1Font.html">Font</a> &amp;font, const <a class="el" href="structBirb_1_1Color.html">Color</a> &amp;color, const <a class="el" href="structBirb_1_1Color.html">Color</a> &amp;bgColor)</td></tr>
+<tr class="separator:a2749beaad798fcb2beee35c4b153d90e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17df27911644450068a5075ab966b5fa"><td class="memItemLeft" align="right" valign="top"><a id="a17df27911644450068a5075ab966b5fa" name="a17df27911644450068a5075ab966b5fa"></a>
 static Uint8 *&#160;</td><td class="memItemRight" valign="bottom"><b>CopyTexturePixels</b> (SDL_Surface *surface, int *width, int *height, int *pitch)</td></tr>
 <tr class="separator:a17df27911644450068a5075ab966b5fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -122,9 +119,6 @@ static SDL_Texture *&#160;</td><td class="memItemRight" valign="bottom"><b>TextS
 <tr class="memitem:ad4709fb5033beb4fbc4a3a99eec22c2f"><td class="memItemLeft" align="right" valign="top"><a id="ad4709fb5033beb4fbc4a3a99eec22c2f" name="ad4709fb5033beb4fbc4a3a99eec22c2f"></a>
 static SDL_Texture *&#160;</td><td class="memItemRight" valign="bottom"><b>TextSprite</b> (const std::string &amp;text, TTF_Font *font, const SDL_Color &amp;color, const SDL_Color &amp;bgColor)</td></tr>
 <tr class="separator:ad4709fb5033beb4fbc4a3a99eec22c2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a973ae31aa64ce4713bcdfd8a40c83caf"><td class="memItemLeft" align="right" valign="top"><a id="a973ae31aa64ce4713bcdfd8a40c83caf" name="a973ae31aa64ce4713bcdfd8a40c83caf"></a>
-static TTF_Font *&#160;</td><td class="memItemRight" valign="bottom"><b>LoadFont</b> (const std::string &amp;p_filePath, const int &amp;p_fontSize)</td></tr>
-<tr class="separator:a973ae31aa64ce4713bcdfd8a40c83caf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17df27911644450068a5075ab966b5fa"><td class="memItemLeft" align="right" valign="top"><a id="a17df27911644450068a5075ab966b5fa" name="a17df27911644450068a5075ab966b5fa"></a>
 static Uint8 *&#160;</td><td class="memItemRight" valign="bottom"><b>CopyTexturePixels</b> (SDL_Surface *surface, int *width, int *height, int *pitch)</td></tr>
 <tr class="separator:a17df27911644450068a5075ab966b5fa"><td class="memSeparator" colspan="2">&#160;</td></tr>

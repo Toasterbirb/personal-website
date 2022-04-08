@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['text_0',['Text',['../structBirb_1_1EntityComponent_1_1Text.html',1,'Birb::EntityComponent']]],
-  ['timer_1',['Timer',['../classBirb_1_1Timer.html',1,'Birb']]],
-  ['timestep_2',['TimeStep',['../structBirb_1_1TimeStep.html',1,'Birb']]]
+  ['random_0',['Random',['../classBirb_1_1Random.html',1,'Birb']]],
+  ['rect_1',['Rect',['../classBirb_1_1Rect.html',1,'Birb']]],
+  ['rendervars_2',['RenderVars',['../structBirb_1_1Global_1_1RenderVars.html',1,'Birb::Global']]],
+  ['resources_3',['Resources',['../structBirb_1_1Resources.html',1,'Birb']]]
 ];

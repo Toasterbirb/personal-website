@@ -1,7 +1,7 @@
 var searchData=
 [
   ['digitalformat_0',['DigitalFormat',['../classBirb_1_1Timer.html#ab772595aaeb0713f8365d214c8912b69',1,'Birb::Timer']]],
-  ['display_1',['Display',['../structBirb_1_1Window.html#ad783e2a2774419011c716003fb1cb5bd',1,'Birb::Window']]],
+  ['display_1',['Display',['../classBirb_1_1Window.html#ad783e2a2774419011c716003fb1cb5bd',1,'Birb::Window']]],
   ['drawcircle_2',['DrawCircle',['../namespaceBirb_1_1Render.html#ab79b08f57e3cb40d84cc585436eac958',1,'Birb::Render::DrawCircle(const Circle &amp;circle)'],['../namespaceBirb_1_1Render.html#a45a422195d33cb78c0102ea9f552d126',1,'Birb::Render::DrawCircle(const Color &amp;color, const Vector2int &amp;pos, const int &amp;radius)']]],
   ['drawentity_3',['DrawEntity',['../namespaceBirb_1_1Render.html#a8fde00f0dd57f53cc85294efdb7d829e',1,'Birb::Render']]],
   ['drawline_4',['DrawLine',['../namespaceBirb_1_1Render.html#a5f76be8d07e947d80bcbe8e7ca0c1aed',1,'Birb::Render::DrawLine(const Color &amp;color, const Vector2int &amp;pointA, const Vector2int &amp;pointB)'],['../namespaceBirb_1_1Render.html#ad2cebc4c47311a2d5ff30d7d18298db0',1,'Birb::Render::DrawLine(const Color &amp;color, const Vector2f &amp;pointA, const Vector2f &amp;pointB)'],['../namespaceBirb_1_1Render.html#a694ecbd062b59d193bfe9abfcf0d1275',1,'Birb::Render::DrawLine(const Line &amp;line)'],['../namespaceBirb_1_1Render.html#a93b5d05b272a7df02cb200d299005159',1,'Birb::Render::DrawLine(const Line &amp;line, const int &amp;thickness)']]],

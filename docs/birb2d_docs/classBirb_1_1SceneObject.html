@@ -102,7 +102,8 @@ Inheritance diagram for Birb::SceneObject:</div>
 <area href="classBirb_1_1Line.html" alt="Birb::Line" shape="rect" coords="272,56,398,80"/>
 <area href="classBirb_1_1Polygon.html" alt="Birb::Polygon" shape="rect" coords="408,56,534,80"/>
 <area href="classBirb_1_1Rect.html" alt="Birb::Rect" shape="rect" coords="544,56,670,80"/>
-<area href="classBirb_1_1Widgets_1_1Graph.html" alt="Birb::Widgets::Graph" shape="rect" coords="680,56,806,80"/>
+<area href="classBirb_1_1Scene.html" alt="Birb::Scene" shape="rect" coords="680,56,806,80"/>
+<area href="classBirb_1_1Widgets_1_1Graph.html" alt="Birb::Widgets::Graph" shape="rect" coords="816,56,942,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -111,15 +112,27 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac22ca4427dbc08267815591488cd69ee"><td class="memItemLeft" align="right" valign="top"><a id="ac22ca4427dbc08267815591488cd69ee" name="ac22ca4427dbc08267815591488cd69ee"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SceneObject</b> (const int &amp;priority)</td></tr>
 <tr class="separator:ac22ca4427dbc08267815591488cd69ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e1749a6b9877e9d0c63252eb5c7200b"><td class="memItemLeft" align="right" valign="top"><a id="a6e1749a6b9877e9d0c63252eb5c7200b" name="a6e1749a6b9877e9d0c63252eb5c7200b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SceneObject</b> (const int &amp;priority, const bool &amp;active)</td></tr>
+<tr class="separator:a6e1749a6b9877e9d0c63252eb5c7200b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97d67bbd790d18518ed5ec5e6ec2a042"><td class="memItemLeft" align="right" valign="top"><a id="a97d67bbd790d18518ed5ec5e6ec2a042" name="a97d67bbd790d18518ed5ec5e6ec2a042"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>RenderFunc</b> ()=0</td></tr>
 <tr class="separator:a97d67bbd790d18518ed5ec5e6ec2a042"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bb010109a98e8279ebff5b753f3eb30"><td class="memItemLeft" align="right" valign="top"><a id="a3bb010109a98e8279ebff5b753f3eb30" name="a3bb010109a98e8279ebff5b753f3eb30"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPos</b> (const <a class="el" href="structBirb_1_1Vector2f.html">Vector2f</a> &amp;delta)=0</td></tr>
+<tr class="separator:a3bb010109a98e8279ebff5b753f3eb30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a661879754ee110058b0f521f2262e896"><td class="memItemLeft" align="right" valign="top"><a id="a661879754ee110058b0f521f2262e896" name="a661879754ee110058b0f521f2262e896"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>renderingPriority</b></td></tr>
 <tr class="separator:a661879754ee110058b0f521f2262e896"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24b235a7207041ecb432bf6783cddd7e"><td class="memItemLeft" align="right" valign="top"><a id="a24b235a7207041ecb432bf6783cddd7e" name="a24b235a7207041ecb432bf6783cddd7e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>sceneActive</b></td></tr>
+<tr class="separator:a24b235a7207041ecb432bf6783cddd7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3cf63a1c8d6abc359e5b8e6220dd8a4"><td class="memItemLeft" align="right" valign="top"><a id="ae3cf63a1c8d6abc359e5b8e6220dd8a4" name="ae3cf63a1c8d6abc359e5b8e6220dd8a4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>active</b></td></tr>
+<tr class="separator:ae3cf63a1c8d6abc359e5b8e6220dd8a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>include/<a class="el" href="SceneObject_8hpp_source.html">SceneObject.hpp</a></li>

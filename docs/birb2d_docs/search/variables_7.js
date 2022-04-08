@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['name_0',['name',['../classBirb_1_1Entity.html#a2b2a63878c6471604dc5cea9908ff55d',1,'Birb::Entity']]],
-  ['normalizedzerovalue_1',['normalizedZeroValue',['../classBirb_1_1Widgets_1_1Graph.html#a1e7a73acbc09036d09ebe6e6d93befd3',1,'Birb::Widgets::Graph']]]
+  ['maxvalue_0',['maxValue',['../structBirb_1_1EntityComponent_1_1ProgressBar.html#a1b7c3b7027a388da4924ed8616c96d19',1,'Birb::EntityComponent::ProgressBar']]],
+  ['minvalue_1',['minValue',['../structBirb_1_1EntityComponent_1_1ProgressBar.html#a4d828a5893394fd6189cf6dd098120a1',1,'Birb::EntityComponent::ProgressBar']]]
 ];

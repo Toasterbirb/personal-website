@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['entity_0',['Entity',['../classBirb_1_1Entity.html',1,'Birb']]]
+  ['debugging_0',['Debugging',['../structBirb_1_1Diagnostics_1_1Debugging.html',1,'Birb::Diagnostics']]]
 ];

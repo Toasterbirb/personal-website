@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['window_0',['Window',['../structBirb_1_1Window.html#abaf774ba772abd83de9d36ec68cb9ce4',1,'Birb::Window::Window()'],['../structBirb_1_1Window.html#a879c33ff7b6f5cc3874bb5e915a96e38',1,'Birb::Window::Window(const std::string &amp;p_title, const Vector2int &amp;p_window_dimensions, const int &amp;p_refresh_rate, const bool &amp;resizable)']]],
-  ['window_5fdimensions_5fmultiplier_1',['window_dimensions_multiplier',['../structBirb_1_1Window.html#a895cf53dbaf9e2c62b3dad655cbd531b',1,'Birb::Window']]]
+  ['vectordistance_0',['VectorDistance',['../namespaceBirb_1_1Math.html#aae12cc7bedab6c709ddb48c1dcfdfdd8',1,'Birb::Math::VectorDistance(const Vector2f &amp;a, const Vector2f &amp;b)'],['../namespaceBirb_1_1Math.html#abbce144146543a16b285e0f501c713c3',1,'Birb::Math::VectorDistance(const Vector2int &amp;a, const Vector2int &amp;b)'],['../namespaceBirb_1_1Math.html#a7507a32002b787044cacef649d52fb2b',1,'Birb::Math::VectorDistance(const Vector3f &amp;a, const Vector3f &amp;b)'],['../namespaceBirb_1_1Math.html#a14b088cc430f1224f06c9fcc933baf43',1,'Birb::Math::VectorDistance(const Vector3int &amp;a, const Vector3int &amp;b)']]]
 ];

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['textcomponent_0',['textComponent',['../classBirb_1_1Entity.html#a2acdea97b21a0ab254092692f180d310',1,'Birb::Entity']]],
-  ['type_1',['type',['../classBirb_1_1Widgets_1_1Graph.html#aba4bce911cbb65ed628f57079f39dce8',1,'Birb::Widgets::Graph']]]
+  ['sprite_0',['sprite',['../classBirb_1_1Entity.html#a1dc94a2a24176a724460cdcb4f2bf33c',1,'Birb::Entity']]],
+  ['spritesize_1',['spriteSize',['../structBirb_1_1EntityComponent_1_1Animation.html#a861731bb0d45395a0cdbdb73dec45e6b',1,'Birb::EntityComponent::Animation']]]
 ];

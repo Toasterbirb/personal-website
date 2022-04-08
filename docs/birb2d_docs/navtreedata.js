@@ -51,7 +51,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "Audio_8hpp_source.html",
-"structBirb_1_1EntityComponent_1_1ProgressBar.html#ab6931b918ddd9340755a93e7ae9a3e3d"
+"namespaceBirb_1_1Render.html#ab79b08f57e3cb40d84cc585436eac958"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

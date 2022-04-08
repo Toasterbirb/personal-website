@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['musicfile_0',['MusicFile',['../classBirb_1_1Audio_1_1MusicFile.html',1,'Birb::Audio']]]
+  ['isinit_0',['IsInit',['../structBirb_1_1Global_1_1IsInit.html',1,'Birb::Global']]]
 ];

@@ -2,13 +2,18 @@ var namespaces_dup =
 [
     [ "Birb", null, [
       [ "Diagnostics", null, [
+        [ "Debugging", "structBirb_1_1Diagnostics_1_1Debugging.html", null ],
         [ "FrametimeGraph", "classBirb_1_1Diagnostics_1_1FrametimeGraph.html", null ]
       ] ],
       [ "EntityComponent", null, [
         [ "Animation", "structBirb_1_1EntityComponent_1_1Animation.html", "structBirb_1_1EntityComponent_1_1Animation" ],
-        [ "Click", "structBirb_1_1EntityComponent_1_1Click.html", null ],
+        [ "Click", "classBirb_1_1EntityComponent_1_1Click.html", null ],
         [ "ProgressBar", "structBirb_1_1EntityComponent_1_1ProgressBar.html", "structBirb_1_1EntityComponent_1_1ProgressBar" ],
         [ "Text", "structBirb_1_1EntityComponent_1_1Text.html", "structBirb_1_1EntityComponent_1_1Text" ]
+      ] ],
+      [ "Global", null, [
+        [ "IsInit", "structBirb_1_1Global_1_1IsInit.html", null ],
+        [ "RenderVars", "structBirb_1_1Global_1_1RenderVars.html", null ]
       ] ],
       [ "Math", "namespaceBirb_1_1Math.html", [
         [ "CenterPoint", "namespaceBirb_1_1Math.html#affd2aa8615420a4fc0ba9d7a2acc0dab", null ],
@@ -38,6 +43,25 @@ var namespaces_dup =
         [ "VectorDistance", "namespaceBirb_1_1Math.html#a7507a32002b787044cacef649d52fb2b", null ],
         [ "VectorDistance", "namespaceBirb_1_1Math.html#a14b088cc430f1224f06c9fcc933baf43", null ]
       ] ],
+      [ "Physics", "namespaceBirb_1_1Physics.html", [
+        [ "CircleCollision", "namespaceBirb_1_1Physics.html#ad3f474cc56fbcb6df627fbed229ae545", null ],
+        [ "CircleCollision", "namespaceBirb_1_1Physics.html#a23d6d20c3c97a0752d1334570b0b3748", null ],
+        [ "CircleCollision", "namespaceBirb_1_1Physics.html#aab4a3d7b93c658224cf989a94133700b", null ],
+        [ "CircleCollision", "namespaceBirb_1_1Physics.html#a7cf58c901294c09fdd9864ee0c1eb334", null ],
+        [ "EntityCollision", "namespaceBirb_1_1Physics.html#a52169f5179468a1cfc607b95cf93a3da", null ],
+        [ "LineIntersection", "namespaceBirb_1_1Physics.html#a99c94c0fa6b8952bbff32d7e2ae2ba60", null ],
+        [ "PointInCircle", "namespaceBirb_1_1Physics.html#ada9f60bae2deafac1e27bd85753215ea", null ],
+        [ "PointInCircle", "namespaceBirb_1_1Physics.html#a0d0f702cb193091acc4105698eb741a1", null ],
+        [ "PointInPolygon", "namespaceBirb_1_1Physics.html#abff6e068f9eb1630ecc1898c4ec5b2bc", null ],
+        [ "PolygonCollision", "namespaceBirb_1_1Physics.html#ac4c15e6064f1444a5981dde1f0515e36", null ],
+        [ "PolygonCollision", "namespaceBirb_1_1Physics.html#a3cbce37947df5603bb092952054f1cdc", null ],
+        [ "PolygonCollision", "namespaceBirb_1_1Physics.html#ae23f64fb687a3de35bb2b2cd11f25220", null ],
+        [ "PolygonCollision", "namespaceBirb_1_1Physics.html#a01105af3da05d17138310df521779cd8", null ],
+        [ "RectCollision", "namespaceBirb_1_1Physics.html#a6f813ea7efc302488a22d4cbfe4dac80", null ],
+        [ "RectCollision", "namespaceBirb_1_1Physics.html#a8099387c2282add978ed345e23b18472", null ],
+        [ "RectCollision", "namespaceBirb_1_1Physics.html#a9df8c293f437d650e2c5c12fb6b31aa3", null ],
+        [ "RectCollision", "namespaceBirb_1_1Physics.html#a88161788b813c2e189f944edc0e214ae", null ]
+      ] ],
       [ "Render", "namespaceBirb_1_1Render.html", [
         [ "DrawCircle", "namespaceBirb_1_1Render.html#ab79b08f57e3cb40d84cc585436eac958", null ],
         [ "DrawCircle", "namespaceBirb_1_1Render.html#a45a422195d33cb78c0102ea9f552d126", null ],
@@ -63,9 +87,10 @@ var namespaces_dup =
       ] ],
       [ "ApplicationInfo", "structBirb_1_1ApplicationInfo.html", null ],
       [ "Audio", "structBirb_1_1Audio.html", "structBirb_1_1Audio" ],
-      [ "Circle", "classBirb_1_1Circle.html", null ],
+      [ "Circle", "classBirb_1_1Circle.html", "classBirb_1_1Circle" ],
       [ "Color", "structBirb_1_1Color.html", "structBirb_1_1Color" ],
       [ "Entity", "classBirb_1_1Entity.html", "classBirb_1_1Entity" ],
+      [ "Font", "classBirb_1_1Font.html", null ],
       [ "Line", "classBirb_1_1Line.html", "classBirb_1_1Line" ],
       [ "Polygon", "classBirb_1_1Polygon.html", "classBirb_1_1Polygon" ],
       [ "Random", "classBirb_1_1Random.html", null ],
@@ -73,6 +98,7 @@ var namespaces_dup =
       [ "Resources", "structBirb_1_1Resources.html", null ],
       [ "Scene", "classBirb_1_1Scene.html", "classBirb_1_1Scene" ],
       [ "SceneObject", "classBirb_1_1SceneObject.html", null ],
+      [ "Texture", "classBirb_1_1Texture.html", null ],
       [ "Timer", "classBirb_1_1Timer.html", "classBirb_1_1Timer" ],
       [ "TimeStep", "structBirb_1_1TimeStep.html", "structBirb_1_1TimeStep" ],
       [ "UI", "classBirb_1_1UI.html", "classBirb_1_1UI" ],
@@ -80,6 +106,6 @@ var namespaces_dup =
       [ "Vector2int", "structBirb_1_1Vector2int.html", null ],
       [ "Vector3f", "structBirb_1_1Vector3f.html", null ],
       [ "Vector3int", "structBirb_1_1Vector3int.html", null ],
-      [ "Window", "structBirb_1_1Window.html", "structBirb_1_1Window" ]
+      [ "Window", "classBirb_1_1Window.html", "classBirb_1_1Window" ]
     ] ]
 ];
