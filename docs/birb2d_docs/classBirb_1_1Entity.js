@@ -2,10 +2,7 @@ var classBirb_1_1Entity =
 [
     [ "Entity", "classBirb_1_1Entity.html#a68531115a7f5b4b2c24e8ba66f6cb907", null ],
     [ "Entity", "classBirb_1_1Entity.html#ac49f9a6da6a91e20576d015be30b2338", null ],
-    [ "Entity", "classBirb_1_1Entity.html#a11607b6cd04149b473bb8ca06f06a05c", null ],
-    [ "Entity", "classBirb_1_1Entity.html#a0d58e0590c0ba3dcfa96399ca0ed20e0", null ],
     [ "Entity", "classBirb_1_1Entity.html#aba916c13ee851e674c076de95a4c2df9", null ],
-    [ "Entity", "classBirb_1_1Entity.html#ab58a9d9bbafcfe637990e03dd41fceed", null ],
     [ "getAtlasPosition", "classBirb_1_1Entity.html#abe037037bfe649506957fc9d46bd422c", null ],
     [ "isHovering", "classBirb_1_1Entity.html#a654f37f1d1706fc74e75daf2ce1af183", null ],
     [ "LoadSprite", "classBirb_1_1Entity.html#a284908ef1b3d80b26a370cca4e83b83d", null ],
@@ -21,6 +18,6 @@ var classBirb_1_1Entity =
     [ "name", "classBirb_1_1Entity.html#a2b2a63878c6471604dc5cea9908ff55d", null ],
     [ "progressBarComponent", "classBirb_1_1Entity.html#a743b0618ebe31f7a7969674d94d120f8", null ],
     [ "rect", "classBirb_1_1Entity.html#aa5ffa3831200c7764c5f35f9ad01fc25", null ],
-    [ "sprite", "classBirb_1_1Entity.html#a1dc94a2a24176a724460cdcb4f2bf33c", null ],
+    [ "sprite", "classBirb_1_1Entity.html#a8a383444214d9fd163d1d63c56a0a102", null ],
     [ "textComponent", "classBirb_1_1Entity.html#a2acdea97b21a0ab254092692f180d310", null ]
 ];

@@ -26,7 +26,7 @@ var NAVTREE =
 [
   [ "Birb2D", "index.html", [
     [ "Namespaces", "namespaces.html", [
-      [ "Namespace List", "namespaces.html", "namespaces_dup" ],
+      [ "Namespace List", "namespaces.html", null ],
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", null ],
         [ "Functions", "namespacemembers_func.html", null ]
@@ -50,8 +50,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"Audio_8hpp_source.html",
-"namespaceBirb_1_1Render.html#ab79b08f57e3cb40d84cc585436eac958"
+"Audio_8hpp_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

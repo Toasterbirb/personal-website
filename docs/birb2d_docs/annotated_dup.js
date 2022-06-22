@@ -21,7 +21,7 @@ var annotated_dup =
       [ "ApplicationInfo", "structBirb_1_1ApplicationInfo.html", null ],
       [ "Audio", "structBirb_1_1Audio.html", "structBirb_1_1Audio" ],
       [ "Circle", "classBirb_1_1Circle.html", "classBirb_1_1Circle" ],
-      [ "Color", "structBirb_1_1Color.html", "structBirb_1_1Color" ],
+      [ "Color", "structBirb_1_1Color.html", null ],
       [ "Entity", "classBirb_1_1Entity.html", "classBirb_1_1Entity" ],
       [ "Font", "classBirb_1_1Font.html", null ],
       [ "Line", "classBirb_1_1Line.html", "classBirb_1_1Line" ],
