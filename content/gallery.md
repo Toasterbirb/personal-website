@@ -6,12 +6,14 @@
 This page is mostly for portfolio / memorial purposes, mostly 3D-art I have done in the past / recent times.
 <break>
 
+<a href="./pics/art/high-res/j5_render_dark.png"><img class="gallery" src="./pics/art/thumbnails/j5_render_dark.png" /></a>
+<a href="./pics/art/high-res/j5_render_light_cycles.png"><img class="gallery" src="./pics/art/thumbnails/j5_render_light_cycles.png" /></a>
 <a href="./pics/art/high-res/Classroom-render.jpg"><img class="gallery" src="./pics/art/thumbnails/Classroom-render.jpg" /></a>
 <a href="./pics/art/high-res/Classroom-volume-render.jpg"><img class="gallery" src="./pics/art/thumbnails/Classroom-volume-render.jpg" /></a>
 <a href="./pics/art/high-res/corridor.jpg"><img class="gallery" src="./pics/art/thumbnails/corridor.jpg" /></a>
+<a href="./pics/art/high-res/low_poly_island.jpg"><img class="gallery" src="./pics/art/thumbnails/low_poly_island.jpg" /></a>
 <a href="./pics/art/high-res/floating_cube.jpg"><img class="gallery" src="./pics/art/thumbnails/floating_cube.jpg" /></a>
 <a href="./pics/art/high-res/banner.jpg"><img class="gallery" src="./pics/art/thumbnails/banner.jpg" /></a>
-<a href="./pics/art/high-res/low_poly_island.jpg"><img class="gallery" src="./pics/art/thumbnails/low_poly_island.jpg" /></a>
 <a href="./pics/art/high-res/puu.jpg"><img class="gallery" src="./pics/art/thumbnails/puu.jpg" /></a>
 <a href="./pics/art/high-res/sword.jpg"><img class="gallery" src="./pics/art/thumbnails/sword.jpg" /></a>
 <a href="./pics/art/high-res/talvi.jpg"><img class="gallery" src="./pics/art/thumbnails/talvi.jpg" /></a>
