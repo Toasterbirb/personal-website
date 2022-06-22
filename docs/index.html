@@ -11,18 +11,210 @@ Home nest
 <h1>Home Nest</h1>
 <hr>
 Welcome to my internet property! I usually go by the name of 'ToasterBirb', love birbs (birds) and identify as a computer addict.<br><br>
-I picked up HTML at 5th grade in elementary school, but actual programming languages came in at 8th grade. My personal favourites are C-based languages like C, C++ and C#. I have also dabbled into some other languages but haven't been able to wrap my head around them. I still remember sitting in some python class writing the assignments in C++, because I just couldn't think straight with the python syntax. If I will ever learn new languages, those will probably be Rust, Go or x86-assembly.
-<h2>Links to internet stuff I have made</h2>
-I push most of the stuff I make to my <a href="https://github.com/Toasterbirb">Github</a>
+I picked up HTML at 5th grade in elementary school, but actual programming languages came in at 8th grade. My personal favourites are C-based languages like C, C++ and C#. I have also dabbled into some other languages but haven't been able to wrap my head around them. I still remember sitting in some python class writing the assignments in C++, because I just couldn't think straight with the python syntax. If I will ever learn new languages, those will probably be Rust, Go or x86-assembly. Source code for this website is available <a href="https://github.com/Toasterbirb/personal-website"><strong>here</strong></a>
+<h2>Software</h2>
+Here's a list of some open source softare software / scripts I have made in no particular order. I license pretty much everything under GPLv3, so feel free to use anything you'd like following the license terms accordingly
+<h3>Table of contents</h3>
 <ul>
-<li><a href="https://github.com/Toasterbirb/Birb2D"><strong>Birb2D</strong></a>. A small game engine project of mine written in C++. So far I have made a <a href="https://github.com/Toasterbirb/Flappy-Birb">Flappy Bird</a> clone with it. More information and documentation about the project can be found <a href="https://birb2d.toasterbirb.com">here</a></li>
-<li><a href="https://github.com/toasterbirb/seedsplit"><strong>SeedSplit</strong></a>. Simple timer made with Birb2D. It had support for simple splits and is useful for speedrunning.</li>
-<li><a href="https://github.com/Toasterbirb/dde/tree/dev"><strong>dde</strong></a>. &quot;Dynamic desktop environment&quot;, a mixture of <a href="https://suckless.org/">suckless</a> programs, like <a href="https://dwm.suckless.org/">dwm</a> and <a href="https://tools.suckless.org/dmenu/">dmenu</a> that I have been trying to combine into one desktop environment that would be simpler to install on a new system.</li>
-<li><a href="https://github.com/Toasterbirb/dsteam"><strong>dsteam</strong></a>. Dmenu fork for launching steam games from a simple <a href="https://tools.suckless.org/dmenu/">dmenu</a>-like menu.</li>
-<li><a href="https://github.com/Toasterbirb/kami-red"><strong>kami-red</strong></a>. A fork of mine from the well known Minecraft anarchy utility client <a href="https://kamiblue.org/">kami-blue</a>.</li>
-<li><a href="https://github.com/Toasterbirb/personal-website"><strong>This website</strong></a>. Yes, it is open source. Dig in and see how I'm generating these pages from markdown files with a simple shell script.
-<br><br></li>
+<li><a href="#desktop">Desktop</a></li>
+<li><a href="#games">Games</a></li>
+<li><a href="#languages">Languages</a></li>
+<li><a href="#media">Media</a></li>
+<li><a href="#misc">Misc.</a></li>
 </ul>
 <hr>
+<a name="desktop"></a>
+<h3>Desktop</h3>
+Desktop applications for Linux. Mostly forks of suckless applications with some tweaks to suit my personal needs / taste + dmenu scripts that don't fit to other categories
+<ul>
+<li><a href="https://github.com/Toasterbirb/dde">dde</a></li>
+</ul>
+<blockquote>
+&quot;Dynamic Desktop Environment&quot;, a combination of different programs (mostly suckless software) to create a lightweight desktop environment. Currently contains a window manager, statusbar, program launcher, lockscreen and a terminal emulator. Different components can also be installed separately by not running the installation script but rather using plain <code>make install</code> in the respective source directories
+</blockquote>
+<ul>
+<li><a href="https://github.com/Toasterbirb/dwm">dwm</a></li>
+</ul>
+<blockquote>
+Standalone fork of the suckless <a href="https://dwm.suckless.org/">dwm</a>. Not updated anymore, please use <a href="https://github.com/Toasterbirb/dde">dde</a> instead.
+</blockquote>
+<ul>
+<li><a href="https://github.com/Toasterbirb/surf">surf</a></li>
+</ul>
+<blockquote>
+A fork of suckless <a href="https://surf.suckless.org/">surf</a>. Has a few patches, nothing special
+</blockquote>
+<ul>
+<li><a href="https://github.com/Toasterbirb/dmenu">dmenu</a></li>
+</ul>
+<blockquote>
+A fork of suckless <a href="https://tools.suckless.org/dmenu/">dmenu</a>. Not updated anymore, please use <a href="https://github.com/Toasterbirb/dde">dde</a> instead.
+</blockquote>
+<ul>
+<li><a href="https://github.com/Toasterbirb/dmenu-bitwarden">dmenu-bitwarden</a></li>
+</ul>
+<blockquote>
+Script for accessing bitwarden vault with dmenu
+</blockquote>
+<ul>
+<li><a href="https://github.com/Toasterbirb/dsteam">dsteam</a></li>
+</ul>
+<blockquote>
+dmenu launcher for Steam games
+</blockquote>
+<hr>
+<a name="games"></a>
+<h3>Games</h3>
+Game projects and other video game related things
+<ul>
+<li><a href="https://github.com/Toasterbirb/Birb2D">Birb2D</a></li>
+</ul>
+<blockquote>
+A simple game engine written in C++. Currently only supports 2D graphics with SDL, but might be able to do 3D in the future with GLFW and glad
+</blockquote>
+<ul>
+<li><a href="https://github.com/Toasterbirb/Birb2D-Interpolation-Demo">Birb2D Interpolation demo</a></li>
+</ul>
+<blockquote>
+A technical demo for testing different features in Birb2D, mainly interpolation math, text components and path sorting. Was originally meant to be some tower defense game, but got turned into a testing sandbox instead.
+</blockquote>
+<ul>
+<li><a href="https://github.com/Toasterbirb/Flappy-Birb">Flappy Birb</a></li>
+</ul>
+<blockquote>
+A Flappy Bird ripoff made with <a href="https://github.com/Toasterbirb/Birb2D">Birb2D</a>
+</blockquote>
+<ul>
+<li><a href="https://github.com/Toasterbirb/Pong">Pong</a></li>
+</ul>
+<blockquote>
+The good old Pong made with <a href="https://github.com/Toasterbirb/Birb2D">Birb2D</a>
+</blockquote>
+<ul>
+<li><a href="https://github.com/Toasterbirb/SeedSplit">SeedSplit</a></li>
+</ul>
+<blockquote>
+A game speedrunning timer with splits. Made with <a href="https://github.com/Toasterbirb/Birb2D">Birb2D</a>
+</blockquote>
+<ul>
+<li><a href="https://github.com/Toasterbirb/Breakout">Breakout</a></li>
+</ul>
+<blockquote>
+Atari breakout clone made with <a href="https://github.com/Toasterbirb/Birb2D">Birb2D</a>
+</blockquote>
+<ul>
+<li><a href="https://ldjam.com/events/ludum-dare/50/ld50-exe">LD50.exe</a></li>
+</ul>
+<blockquote>
+Ludum Dare 50 game jam game made in a weekend with <a href="https://github.com/Toasterbirb/Birb2D">Birb2D</a>
+</blockquote>
+<ul>
+<li><a href="https://github.com/Toasterbirb/SDL2-installer">SDL2 installer</a></li>
+</ul>
+<blockquote>
+A short script for compiling and installing SDL2 from source on Linux in case the packages aren't available in the distributions package manager
+</blockquote>
+<hr>
+<a name="languages"></a>
+<h3>Languages</h3>
+Software related to language learning or translation (mainly spoken / written languages, not programming languages)
+<ul>
+<li><a href="https://github.com/Toasterbirb/jisho-cli">jisho-cli</a></li>
+</ul>
+<blockquote>
+CLI interface for <a href="https://jisho.org/">jisho.org</a> (Japanese - English dictionary). Uses both web scraping and jisho.org API
+</blockquote>
+<ul>
+<li><a href="https://github.com/Toasterbirb/goo-cli">goo-cli</a></li>
+</ul>
+<blockquote>
+CLI interface for the <a href="https://dictionary.goo.ne.jp/">goo.ne.jp</a> online dictionary. (Japanese - Japanese dictionary). Uses web scraping
+</blockquote>
+<hr>
+<a name="media"></a>
+<h3>Media</h3>
+All kinds of software related to image / video -processing and media consumption
+<ul>
+<li><a href="https://github.com/Toasterbirb/clearpixel">clearpixel</a></li>
+</ul>
+<blockquote>
+Image processing script. A combination of waifu2x and imagemagick that helps with denoising / upscaling low quality high resolution pictures. Works the best with cartoonish styled images like manga / anime, but can work with other pictures as well (though the output will look a bit cartoonish)
+</blockquote>
+<ul>
+<li><a href="https://github.com/Toasterbirb/dmenu-tube">dmenu-tube</a></li>
+</ul>
+<blockquote>
+A dmenu script for browsing youtube via the invidious API. Routes all traffic trough tor with SOCKS5 proxies and torsocks and views the videos with mpv
+</blockquote>
+<ul>
+<li><a href="https://github.com/Toasterbirb/rofi-tube">rofi-tube</a></li>
+</ul>
+<blockquote>
+A rofi script for browsing youtube via invidious scraping. Displays videos with mpv
+</blockquote>
+<ul>
+<li><a href="https://github.com/Toasterbirb/youtube-rss">youtube-rss</a></li>
+</ul>
+<blockquote>
+Script for extracting RSS-feed URLs from Youtube channel URLs
+</blockquote>
+<hr>
+<a name="misc"></a>
+<h3>Misc.</h3>
+All kinds of random utilities. Mostly small command line applications
+<ul>
+<li><a href="https://github.com/Toasterbirb/cli-timer">cli-timer</a></li>
+</ul>
+<blockquote>
+Countdown timer with desktop notification support written in C++
+</blockquote>
+<ul>
+<li><a href="https://github.com/Toasterbirb/calculator">calculator</a></li>
+</ul>
+<blockquote>
+Simple calculator written in x86 assembly. Has a lot of flaws and is mostly just a small learning project. Answers above 9 are in ASCII format :D
+</blockquote>
+<ul>
+<li><a href="https://github.com/Toasterbirb/assembly-hello-world">x86 Assembly &quot;Hello World&quot;</a></li>
+</ul>
+<blockquote>
+Quite self explanatory. Prints out &quot;Hello world!&quot; in its full glory
+</blockquote>
+<ul>
+<li><a href="https://github.com/Toasterbirb/Caesar-cipher">Caesar cipher</a></li>
+</ul>
+<blockquote>
+A small program to encode and decode text with Caesar cipher written in C
+</blockquote>
+<ul>
+<li><a href="https://github.com/Toasterbirb/kami-red">KAMI-Red</a></li>
+</ul>
+<blockquote>
+A Minecraft 1.12.2 cheating client forked from KAMI-Blue after the repository was archived. I mainly use this when playing on Constantiam. As for new features when compared to KAMI-Blue, there's bunnyhopping, fast ladder, auto breeding / shearing and a HUD overlay for highway building. There might also be some other changes that I'm forgetting
+</blockquote>
+<ul>
+<li><a href="https://github.com/Toasterbirb/fdroid-privileged-extension">F-Droid privileged extension installer</a></li>
+</ul>
+<blockquote>
+An installer script for the F-Droid privileged extension. I use this script to reinstall the extension after system updates, because those sometimes wipe the extension from the system directories. <u>Please read trough the script carefully if you are considering using it!</u> Its made only my phone (Fairphone 3) in mind and might cause permanent damage in other cases.
+</blockquote>
+<ul>
+<li><a href="https://github.com/Toasterbirb/random-case">Random Case</a></li>
+</ul>
+<blockquote>
+A small program to randomize the casing of a given string to make it look weird and goofy
+</blockquote>
+<ul>
+<li><a href="https://github.com/Toasterbirb/birb">birb</a></li>
+</ul>
+<blockquote>
+Really originally named package manager for BirbOS, my old LFS <a href="https://www.linuxfromscratch.org/">(Linux From Scratch)</a> distro. Uses stow to symlink binaries into /usr. Birb also has the functionality to extract binaries from .deb packages and includes scripts for looking up package source code from the <a href="https://aur.archlinux.org/">AUR</a> and browsing the <a href="https://appimage.github.io/">appimage-hub</a>
+</blockquote>
+<ul>
+<li><a href="https://github.com/Toasterbirb/ReadingTimer">ReadingTimer</a></li>
+</ul>
+<blockquote>
+Android application for timing reading speed via averaging the spent time per page. Haven't touched the source code for many years, no clue if it still works
+</blockquote>
 </body>
 </html>
