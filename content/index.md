@@ -83,6 +83,9 @@ Software related to language learning or translation (mainly spoken / written la
 * [goo-cli](https://github.com/Toasterbirb/goo-cli)
 > CLI interface for the [goo.ne.jp](https://dictionary.goo.ne.jp/) online dictionary. (Japanese - Japanese dictionary). Uses web scraping
 
+* [Urbaani Sanakirja CLI](https://github.com/Toasterbirb/urbaani-sanakirja-cli)
+> CLI interface for [urbaanisanakirja.com](https://urbaanisanakirja.com/) (Finnish version of the urban dictionary). Uses web scraping
+
 ---
 
 ;header=media
